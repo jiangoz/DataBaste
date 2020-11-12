@@ -1,2 +1,2 @@
 # DataBaste
-Database Design 3000 Final Project
+Database Design Final Project
