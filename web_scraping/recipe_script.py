@@ -50,7 +50,7 @@ def get_servings(row):
             data = res.text
             pos = data.find(SERVING_STRING1)
             if(pos != -1):
-                pos += 14  # account for the length of "data-servings="
+                pos += len(SERVING_STRING1)  # account for the length of "data-servings="
                 end_pos = data.find("data-recipe-id=")
                 if(end_pos == -1):
                     end_pos = pos+10
