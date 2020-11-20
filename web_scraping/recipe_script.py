@@ -4,8 +4,8 @@ import requests
 ALL_RECIPES_URL = "https://www.allrecipes.com/recipe/"
 SERVING_STRING1 = "data-servings="
 SERVING_STRING2 = '<meta id="metaRecipeServings" itemprop="recipeYield" content="'
-INPUT_FILE = 'csv/recipes_init.csv'
-OUTPUT_PATH = 'csv/recipes_final.csv'
+INPUT_FILE = 'csv/recipes_final.csv'
+OUTPUT_PATH = 'csv/recipes_final2.csv'
 CREATE = True   #represents if the servings col is being created or modified
 
 # converts a given time string into minutes
@@ -71,7 +71,7 @@ def get_servings(row):
 df = pandas.read_csv(INPUT_FILE, delimiter=';')
 
 # remove unnecessary columns
-df = df.drop(['Review Count','Recipe Photo','Author','Ingredients', 'Directions'], axis=1, errors='ignore')
+df = df.drop(['Review Count', 'Author','Ingredients', 'Directions'], axis=1, errors='ignore')
 
 CREATE = not("Servings" in df.keys())
 
