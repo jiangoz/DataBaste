@@ -9,6 +9,7 @@ prep_time int,
 cook_time int,
 total_time int,
 servings int,
+image varchar(350),
 primary key (recipe_id)
 );
 
