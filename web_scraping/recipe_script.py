@@ -5,7 +5,7 @@ ALL_RECIPES_URL = "https://www.allrecipes.com/recipe/"
 SERVING_STRING1 = "data-servings="
 SERVING_STRING2 = '<meta id="metaRecipeServings" itemprop="recipeYield" content="'
 INPUT_FILE = 'csv/recipes_final.csv'
-OUTPUT_PATH = 'csv/recipes_final2.csv'
+OUTPUT_PATH = 'csv/recipes_final.csv'
 CREATE = True   #represents if the servings col is being created or modified
 
 # converts a given time string into minutes
@@ -31,8 +31,8 @@ def convert_to_mins(time):
 
 # if in improper format, convert the time to minutes
 def convert_time(time):
-    if (time == "X"):
-        time_new = "NULL"
+    if (time == "X" or pandas.isna(time)):
+        return "NULL"
     elif(('m' in str(time)) or ('h' in str(time)) or ('d' in str(time))):
         time_new = convert_to_mins(time)
         return time_new
@@ -68,10 +68,10 @@ def get_servings(row):
     return row["Servings"]
 
 # if error, remove the delimiter field -> depends on input file
-df = pandas.read_csv(INPUT_FILE, delimiter=';')
+df = pandas.read_csv(INPUT_FILE)
 
 # remove unnecessary columns
-df = df.drop(['Review Count', 'Author','Ingredients', 'Directions'], axis=1, errors='ignore')
+df = df.drop(['Review Count','Author','Ingredients', 'Directions'], axis=1, errors='ignore')
 
 CREATE = not("Servings" in df.keys())
 
