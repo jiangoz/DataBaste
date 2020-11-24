@@ -44,8 +44,10 @@ composition_file = composition_file_raw.readlines()
 composition_file_array = [line.split(',') for line in composition_file]
 composition_id_array = [line[0] for line in composition_file_array]
 
+
 # Loop through all ingredient IDs starting with ID user inputs
 ingredient_counter = eval(input('Starting FlavorDB Ingredient ID (0 if unknown): '))
+skipped = []
 
 while True:
 	
@@ -57,6 +59,7 @@ while True:
 		except:  # There could be a number of connection problems, so we're not going to handle each individually
 			pass
 
+
 	# Parse out synonyms from HTML
 	name_start_text = '<h5>Synonyms: <strong><span class="text-capitalize">'
 	name_pos = html_text.find(name_start_text)
@@ -66,7 +69,11 @@ while True:
 			print('Ingredient ' + str(ingredient_counter) + ' format issue')  # There is an issue with an unknown format
 			continue  # Continue for loop, but stop this iteration since there was an issue
 		else:
-			break  # Stop while loop for the first page not found since it is an invalid ID
+			skipped.append(ingredient_counter)
+			if ingredient_counter == 1000:	#no more webpages after this so break
+				break
+			ingredient_counter += 1
+			continue
 	name_text_array = html_text[name_pos + len(name_start_text):name_pos_end].split(', ')
 	if name_text_array[0] == '':  # Empty name text array if no synonyms were found
 		name_text_array = []
@@ -88,7 +95,7 @@ while True:
 	for name in name_text_array:
 		if name in ingredient_name_array:  # Check if normal name is already in ingredients
 			ingredient_ids.append(ingredient_file_array[ingredient_name_array.index(name)][0])
-		if name[-1] == 's':
+		if len(name) > 1 and name[-1] == 's':
 			if name[:-1] in ingredient_name_array:  # Check if singular version of ingredient in ingredients
 				ingredient_ids.append(ingredient_file_array[ingredient_name_array.index(name[:-1])][0])
 		else:
@@ -118,7 +125,7 @@ while True:
 		category_file_raw = open(CATEGORY_FILE, 'r')
 		category_file = category_file_raw.readlines()
 		category_file_array = [line.split(',') for line in category_file]
-		category_name_array = [line[1] for line in category_file_array]
+		category_name_array = [line[1][:-1] for line in category_file_array]
 
 	# Add category id to appropriate rows in ingredient file
 	for ingredient in range(len(ingredient_file_array)):
@@ -168,6 +175,7 @@ while True:
 			# add the molecule to the molecules table if not already there
 			if not (pubchem_id in molecule_id_array):
 				added_molecule = True
+				name = name.replace(',', ';')	#replace commas with semicolons
 				molecule_file.append(pubchem_id + ',' + name + '\n')
 
 			# determine if properties need to be added for a molecule
@@ -260,5 +268,5 @@ while True:
 	# Increase ingredient counter for next loop
 	ingredient_counter += 1
 
-	#TODO: Break is to test on 1 web page without looping through them all. Remove when done
-	break
+
+print("Skipped: " + str(skipped))

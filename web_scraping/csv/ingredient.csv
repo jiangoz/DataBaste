@@ -2,21 +2,21 @@ ingredient_id,ingredient_name,category_id
 0,active dry yeast,-1
 1,warm water,-1
 2,white sugar,-1
-3,salt,-1
+3,salt,34
 4,eggs,0
-5,butter,-1
+5,butter,7
 6,all-purpose flour,-1
 7,baking powder,-1
-8,poppy seeds,-1
+8,poppy seeds,26
 9,butter flavored extract,-1
 10,vegetable oil,-1
-11,milk,-1
+11,milk,7
 12,vanilla extract,-1
 13,almond extract,-1
 14,orange juice,-1
 15,confectioners&#x27; sugar,-1
 16,applesauce,-1
-17,raisins,-1
+17,raisins,13
 18,ground cinnamon,-1
 19,baking soda,-1
 20,sour cream,-1
@@ -25,21 +25,21 @@ ingredient_id,ingredient_name,category_id
 23,rolled oats,-1
 24,grated apple,-1
 25,chopped walnuts,-1
-26,buttermilk,-1
+26,buttermilk,7
 27,egg,0
-28,shortening,-1
+28,shortening,34
 29,scalded milk,-1
 30,egg yolks,-1
 31,lemon extract,-1
-32,fruit preserves,-1
+32,fruit preserves,34
 33,hot water,-1
 34,bread flour,-1
 35,whole wheat flour,-1
-36,cottage cheese,-1
-37,margarine,-1
+36,cottage cheese,7
+37,margarine,34
 38,ripe bananas,-1
 39,instant coffee granules,-1
-40,water,-1
+40,water,34
 41,semisweet chocolate chips,-1
 42,cornmeal,-1
 43,chopped green bell pepper,-1
@@ -55,23 +55,23 @@ ingredient_id,ingredient_name,category_id
 53,unsweetened cocoa powder,-1
 54,semi-sweet chocolate chips,-1
 55,warm milk,-1
-56,molasses,-1
+56,molasses,34
 57,rye flour,-1
 58,brown sugar,-1
-59,ghee,-1
+59,ghee,7
 60,plain yogurt,-1
-61,kalonji,-1
+61,kalonji,22
 62,light corn syrup,-1
 63,ground cardamom,-1
 64,mashed bananas,-1
 65,ground cloves,-1
 66,chopped pecans,-1
 67,wheat germ,-1
-68,honey,-1
+68,honey,24
 69,quick cooking oats,-1
 70,low-fat sour cream,-1
 71,skim milk,-1
-72,carrots,-1
+72,carrots,29
 73,crushed pineapple,-1
 74,cider vinegar,-1
 75,dark corn syrup,-1
@@ -82,7 +82,7 @@ ingredient_id,ingredient_name,category_id
 80,bread machine yeast,-1
 81,chopped dried mixed fruit,-1
 82,grated zucchini,-1
-83,cream cheese,-1
+83,cream cheese,7
 84,pumpkin puree,-1
 85,candied cherries,-1
 86,chopped candied citron,-1
@@ -93,7 +93,7 @@ ingredient_id,ingredient_name,category_id
 91,unsweetened flaked coconut,-1
 92,pineapple chunks,-1
 93,self-rising flour,-1
-94,beer,-1
+94,beer,3
 95,oat bran,-1
 96,dried minced onion,-1
 97,beef bouillon,-1
@@ -115,7 +115,7 @@ ingredient_id,ingredient_name,category_id
 113,peeled,-1
 114,distilled white vinegar,-1
 115,minced onion,-1
-116,garlic,-1
+116,garlic,18
 117,minced parsley,-1
 118,white rice flour,-1
 119,brown rice flour,-1
@@ -134,7 +134,7 @@ ingredient_id,ingredient_name,category_id
 132,finely ground millet flour,-1
 133,pastry flour,-1
 134,lard,-1
-135,currants,-1
+135,currants,13
 136,candied mixed fruit peel,-1
 137,sourdough starter,-1
 138,nonfat dry milk powder,-1
@@ -148,7 +148,7 @@ ingredient_id,ingredient_name,category_id
 146,ground allspice,-1
 147,ground mace,-1
 148,tomato paste,-1
-149,sherry,-1
+149,sherry,3
 150,diced sun-dried tomatoes,-1
 151,sea salt,-1
 152,quinoa flour,-1
@@ -166,7 +166,7 @@ ingredient_id,ingredient_name,category_id
 164,dried currants,-1
 165,candied mixed citrus peel,-1
 166,chopped candied cherries,-1
-167,rum,-1
+167,rum,3
 168,blanched slivered almonds,-1
 169,dried oregano,-1
 170,grated parmigiano reggiano cheese,-1
@@ -189,7 +189,7 @@ ingredient_id,ingredient_name,category_id
 187,egg whites,-1
 188,instant coffee powder,-1
 189,malted milk powder,-1
-190,bananas,-1
+190,bananas,13
 191,chopped black olives,-1
 192,italian seasoning,-1
 193,sifted all-purpose flour,-1
@@ -197,7 +197,7 @@ ingredient_id,ingredient_name,category_id
 195,whole milk,-1
 196,boiling water,-1
 197,orange zest,-1
-198,soy milk,-1
+198,soy milk,2
 199,liquid lecithin,-1
 200,oat flour,-1
 201,soy flour,-1
@@ -222,8 +222,8 @@ ingredient_id,ingredient_name,category_id
 220,shredded mozzarella cheese,-1
 221,monosodium glutamate,-1
 222,baking mix,-1
-223,cheddar cheese,-1
-224,almonds,-1
+223,cheddar cheese,7
+224,almonds,21
 225,fresh blueberries,-1
 226,flaxseed oil,-1
 227,flax seed,-1
@@ -231,7 +231,7 @@ ingredient_id,ingredient_name,category_id
 229,strawberries,-1
 230,1 cup herman sourdough starter,-1
 231,2 cups herman sourdough starter,-1
-232,banana,-1
+232,banana,13
 233,vanilla soy milk,-1
 234,sucanat,-1
 235,dried cherries,-1
@@ -241,17 +241,17 @@ ingredient_id,ingredient_name,category_id
 239,lowfat cream cheese,-1
 240,brewed chai tea,-1
 241,day-old bread,-1
-242,evaporated milk,-1
+242,evaporated milk,7
 243,vegetable oil for frying,-1
 244,potato starch,-1
 245,semolina flour,-1
 246,frozen chopped spinach,-1
 247,mashed ripe banana,-1
-248,corn oil,-1
+248,corn oil,6
 249,refrigerated buttermilk biscuit dough,-1
 250,chopped frozen broccoli,-1
 251,shredded provolone cheese,-1
-252,ricotta cheese,-1
+252,ricotta cheese,7
 253,fresh broccoli,-1
 254,diced pepperoni,-1
 255,salt and pepper to taste,-1
@@ -259,7 +259,7 @@ ingredient_id,ingredient_name,category_id
 257,grated romano cheese,-1
 258,chopped fresh parsley,-1
 259,dark beer,-1
-260,dates,-1
+260,dates,13
 261,minced fresh ginger root,-1
 262,instant lemon pudding mix,-1
 263,granola,-1
@@ -280,7 +280,7 @@ ingredient_id,ingredient_name,category_id
 278,buttermilk baking mix,-1
 279,condensed mincemeat,-1
 280,dutch process cocoa powder,-1
-281,canola oil,-1
+281,canola oil,8
 282,cracked wheat,-1
 283,nonfat milk,-1
 284,raw sunflower seeds,-1
@@ -292,7 +292,7 @@ ingredient_id,ingredient_name,category_id
 290,barley flour,-1
 291,pumpkin pie spice,-1
 292,apples - peeled,-1
-293,peanut butter,-1
+293,peanut butter,24
 294,semisweet chocolate,-1
 295,whole cranberry sauce,-1
 296,sour milk,-1
@@ -324,10 +324,10 @@ ingredient_id,ingredient_name,category_id
 322,corn flour,-1
 323,devil&#x27;s food cake mix with pudding,-1
 324,reduced fat yellow cake mix,-1
-325,white wine,-1
+325,white wine,3
 326,sweetened chestnut puree,-1
 327,semi-sweet chocolate,-1
-328,cream,-1
+328,cream,7
 329,marrons glaces,-1
 330,graham cracker squares,-1
 331,prepared chocolate frosting,-1
@@ -340,8 +340,8 @@ ingredient_id,ingredient_name,category_id
 338,boiling water to cover,-1
 339,gum drops,-1
 340,pitted dates,-1
-341,walnuts,-1
-342,brandy,-1
+341,walnuts,21
+342,brandy,3
 343,apple jelly,-1
 344,grated semisweet chocolate,-1
 345,fresh lemon juice,-1
@@ -365,23 +365,23 @@ ingredient_id,ingredient_name,category_id
 363,super fine sugar,-1
 364,fresh strawberries,-1
 365,hot fudge topping,-1
-366,hazelnuts,-1
+366,hazelnuts,21
 367,packed light brown sugar,-1
 368,dark rum,-1
 369,cream sherry,-1
 370,vanilla ice cream,-1
 371,frozen lemonade concentrate,-1
 372,corn syrup,-1
-373,lemon,-1
+373,lemon,15
 374,frozen pink lemonade concentrate,-1
 375,dry sherry,-1
 376,moist yellow cake mix,-1
 377,instant chocolate pudding mix,-1
-378,vodka,-1
+378,vodka,3
 379,coffee flavored liqueur,-1
 380,prunes,-1
 381,strong brewed coffee,-1
-382,orange,-1
+382,orange,13
 383,butternut flavored extract,-1
 384,sifted confectioners&#x27; sugar,-1
 385,sweetened condensed milk,-1
@@ -462,7 +462,7 @@ ingredient_id,ingredient_name,category_id
 460,hot milk,-1
 461,yellow food coloring,-1
 462,sliced frozen strawberries,-1
-463,marshmallows,-1
+463,marshmallows,1
 464,popped popcorn,-1
 465,small gumdrops,-1
 466,chocolate covered peanuts,-1
@@ -503,7 +503,7 @@ ingredient_id,ingredient_name,category_id
 501,red and green candied cherries,-1
 502,red candied cherries,-1
 503,raisins for decorating,-1
-504,figs,-1
+504,figs,13
 505,turbinado sugar,-1
 506,whole milk ricotta cheese,-1
 507,candied lemon peel,-1
@@ -511,7 +511,7 @@ ingredient_id,ingredient_name,category_id
 509,strawberry frosting mix,-1
 510,candied mixed fruit,-1
 511,cooked pinto beans,-1
-512,brazil nuts,-1
+512,brazil nuts,21
 513,moist white cake mix,-1
 514,carrot cake mix,-1
 515,brownie mix,-1
@@ -551,7 +551,7 @@ ingredient_id,ingredient_name,category_id
 549,ready-to-use strawberry glaze,-1
 550,twinkies,-1
 551,chopped rhubarb,-1
-552,plums,-1
+552,plums,13
 553,frozen sweetened strawberries,-1
 554,fresh peaches - pitted,-1
 555,frozen orange juice concentrate,-1
@@ -593,9 +593,9 @@ ingredient_id,ingredient_name,category_id
 591,chopped almonds,-1
 592,chopped marshmallows,-1
 593,candied pineapple chunks,-1
-594,rhubarb,-1
+594,rhubarb,18
 595,cold milk,-1
-596,blue cheese,-1
+596,blue cheese,7
 597,ground white pepper,-1
 598,red bell pepper,-1
 599,green onion,-1
@@ -606,11 +606,11 @@ ingredient_id,ingredient_name,category_id
 604,blueberry jelly,-1
 605,crushed zwieback toast,-1
 606,shredded colby cheese,-1
-607,cherry brandy,-1
+607,cherry brandy,3
 608,cherry cake mix,-1
 609,mini semi-sweet chocolate chips,-1
-610,lemons,-1
-611,oranges,-1
+610,lemons,15
+611,oranges,13
 612,canned pumpkin,-1
 613,guava pulp,-1
 614,guava nectar,-1
@@ -637,7 +637,7 @@ ingredient_id,ingredient_name,category_id
 635,brewed coffee,-1
 636,dark chocolate frosting,-1
 637,french vanilla yogurt,-1
-638,mandarin oranges,-1
+638,mandarin oranges,15
 639,colored candy sprinkles,-1
 640,blackberry preserves,-1
 641,well-drained,-1
@@ -651,16 +651,16 @@ ingredient_id,ingredient_name,category_id
 649,1 recipe caramel cream frosting,-1
 650,cream-style corn,-1
 651,prepared fluffy white frosting,-1
-652,sugar substitute,-1
+652,sugar substitute,34
 653,dark brown sugar,-1
 654,mashed sweet potatoes,-1
 655,finely chopped golden raisins,-1
-656,sugar,-1
-657,nutmeg,-1
+656,sugar,34
+657,nutmeg,26
 658,chilled applesauce,-1
 659,cranberry applesauce,-1
 660,vanilla or colored frosting,-1
-661,beets,-1
+661,beets,29
 662,chopped apples,-1
 663,light cream,-1
 664,gluten-free vanilla extract,-1
@@ -671,14 +671,14 @@ ingredient_id,ingredient_name,category_id
 669,barley malt syrup,-1
 670,brown rice syrup,-1
 671,crumbled firm silken tofu,-1
-672,champagne,-1
+672,champagne,3
 673,toasted walnuts,-1
 674,blueberry pie filling,-1
 675,chopped pistachio nuts,-1
 676,strawberry extract,-1
 677,granny smith apples,-1
 678,crushed chocolate sandwich cookies,-1
-679,port wine,-1
+679,port wine,3
 680,espresso coffee,-1
 681,butter pecan cake mix,-1
 682,coconut pecan frosting,-1
@@ -723,7 +723,7 @@ ingredient_id,ingredient_name,category_id
 721,caffeinated citrus-flavored soda,-1
 722,blueberries,-1
 723,cannoli shells,-1
-724,strawberry jam,-1
+724,strawberry jam,9
 725,caramel candy,-1
 726,milk chocolate frosting,-1
 727,cayenne pepper,-1
@@ -750,7 +750,7 @@ ingredient_id,ingredient_name,category_id
 748,pineapple rings,-1
 749,finely chopped toasted hazelnuts,-1
 750,chopped strawberries,-1
-751,apples,-1
+751,apples,13
 752,apricot halves,-1
 753,peach schnapps,-1
 754,cooked and mashed sweet potatoes,-1
@@ -765,19 +765,19 @@ ingredient_id,ingredient_name,category_id
 763,sliced mushrooms,-1
 764,skinless,-1
 765,seasoned bread crumbs,-1
-766,mozzarella cheese,-1
+766,mozzarella cheese,7
 767,chicken broth,-1
 768,minced jalapeno peppers,-1
 769,lime juice,-1
 770,soy sauce,-1
 771,boneless,-1
-772,swiss cheese,-1
+772,swiss cheese,7
 773,cooked ham,-1
 774,whole chicken,-1
 775,prepared barbecue sauce,-1
 776,condensed cream of chicken soup,-1
 777,dry bread stuffing mix,-1
-778,celery,-1
+778,celery,26
 779,poultry seasoning,-1
 780,ground black pepper to taste,-1
 781,bread crumbs,-1
@@ -794,19 +794,19 @@ ingredient_id,ingredient_name,category_id
 792,curry powder,-1
 793,paprika,-1
 794,shredded monterey jack cheese,-1
-795,chicken,-1
+795,chicken,19
 796,diced,-1
 797,chopped celery,-1
 798,shredded american cheese,-1
 799,crushed cornflakes cereal,-1
 800,smoked sausage,-1
-801,onion,-1
+801,onion,27
 802,red bell peppers,-1
 803,roma tomatoes,-1
 804,long-grain white rice,-1
 805,chicken stock,-1
 806,lemon - sliced,-1
-807,onions,-1
+807,onions,27
 808,fresh green chile peppers,-1
 809,tomatoes,-1
 810,chicken wings,-1
@@ -833,7 +833,7 @@ ingredient_id,ingredient_name,category_id
 831,dried marjoram,-1
 832,hot pepper sauce,-1
 833,bone-in chicken breast halves,-1
-834,bacon,-1
+834,bacon,19
 835,dried beef,-1
 836,dijon-style prepared mustard,-1
 837,white wine vinegar,-1
@@ -844,7 +844,7 @@ ingredient_id,ingredient_name,category_id
 842,white onions,-1
 843,condensed cream of cheddar cheese soup,-1
 844,cooked boneless chicken breast halves,-1
-845,ketchup,-1
+845,ketchup,34
 846,frozen hash brown potatoes,-1
 847,cubed,-1
 848,diced ham,-1
@@ -854,14 +854,14 @@ ingredient_id,ingredient_name,category_id
 852,green bell pepper,-1
 853,prepared dijon-style mustard,-1
 854,apricot jam,-1
-855,white bread,-1
+855,white bread,1
 856,ground chicken,-1
 857,instant rice,-1
 858,crumbled feta cheese,-1
 859,balsamic vinegar,-1
 860,crushed red pepper flakes,-1
 861,red onion,-1
-862,eggplant,-1
+862,eggplant,27
 863,mixed salad greens,-1
 864,hard-cooked egg,-1
 865,black olives,-1
@@ -882,7 +882,7 @@ ingredient_id,ingredient_name,category_id
 880,chopped carrots,-1
 881,egg noodles,-1
 882,chicken bouillon,-1
-883,mushrooms,-1
+883,mushrooms,17
 884,chicken bouillon powder,-1
 885,chopped pimento,-1
 886,diced and chilled,-1
@@ -897,7 +897,7 @@ ingredient_id,ingredient_name,category_id
 895,cucumber - peeled,-1
 896,chopped red onion,-1
 897,chopped yellow bell pepper,-1
-898,limes,-1
+898,limes,15
 899,fresh chopped cilantro,-1
 900,pitted green olives,-1
 901,garbanzo beans,-1
@@ -909,7 +909,7 @@ ingredient_id,ingredient_name,category_id
 907,all-purpose flour for coating,-1
 908,dry marsala wine,-1
 909,meat extract,-1
-910,lemon grass,-1
+910,lemon grass,8
 911,peeled and chopped fresh turmeric,-1
 912,whole white peppercorns,-1
 913,monterey jack cheese,-1
@@ -925,7 +925,7 @@ ingredient_id,ingredient_name,category_id
 923,prepared horseradish,-1
 924,fat free condensed cream of mushroom soup,-1
 925,sweet potatoes,-1
-926,wild rice,-1
+926,wild rice,5
 927,dried sage,-1
 928,beef consomme,-1
 929,reduced fat sour cream,-1
@@ -940,10 +940,10 @@ ingredient_id,ingredient_name,category_id
 938,avocado - peeled,-1
 939,toasted white bread,-1
 940,diced tomatoes,-1
-941,parmesan cheese,-1
+941,parmesan cheese,7
 942,avocados - peeled,-1
 943,ripe tomatoes,-1
-944,pita breads,-1
+944,pita breads,1
 945,diced tomato,-1
 946,shredded lettuce,-1
 947,sliced avocado,-1
@@ -955,7 +955,7 @@ ingredient_id,ingredient_name,category_id
 953,low-sodium chicken broth,-1
 954,quick-cooking couscous,-1
 955,finely chopped jalapeno chile peppers,-1
-956,carrot,-1
+956,carrot,29
 957,grated fresh ginger root,-1
 958,ground coriander seed,-1
 959,skewers,-1
@@ -970,8 +970,8 @@ ingredient_id,ingredient_name,category_id
 968,skinless chicken thighs,-1
 969,black bean sauce with garlic,-1
 970,sesame oil,-1
-971,red wine,-1
-972,leek,-1
+971,red wine,3
+972,leek,27
 973,chopped fresh dill weed,-1
 974,saturei,-1
 975,syrup from canned figs,-1
@@ -994,25 +994,25 @@ ingredient_id,ingredient_name,category_id
 992,salted cashews,-1
 993,jalapeno pepper,-1
 994,chopped fresh thyme,-1
-995,ham,-1
+995,ham,19
 996,chicken bouillon granules,-1
 997,ginger garlic paste,-1
 998,green chile peppers,-1
 999,garam masala,-1
 1000,ramen noodles,-1
-1001,peanut oil,-1
+1001,peanut oil,24
 1002,rice vinegar,-1
 1003,diced cooked chicken breast meat,-1
 1004,grated fresh coconut,-1
 1005,hot chile pepper,-1
-1006,tortilla chips,-1
+1006,tortilla chips,1
 1007,diced tomatoes with green chile peppers,-1
 1008,italian-style salad dressing,-1
 1009,cajun seasoning,-1
 1010,unsweetened coconut milk,-1
 1011,thinly sliced green onion,-1
-1012,water chestnuts,-1
-1013,peanuts,-1
+1012,water chestnuts,13
+1013,peanuts,21
 1014,french fried onions,-1
 1015,salt and ground black pepper to taste,-1
 1016,bay leaves,-1
@@ -1029,7 +1029,7 @@ ingredient_id,ingredient_name,category_id
 1027,yellow bell pepper,-1
 1028,cashew halves,-1
 1029,whole skinless,-1
-1030,leeks,-1
+1030,leeks,27
 1031,condensed vegetable soup,-1
 1032,pastry for a 9 inch single crust pie,-1
 1033,napa cabbage,-1
@@ -1045,7 +1045,7 @@ ingredient_id,ingredient_name,category_id
 1043,uncooked long grain white rice,-1
 1044,polish sausage,-1
 1045,cracked black pepper,-1
-1046,sage,-1
+1046,sage,18
 1047,dijon mustard,-1
 1048,steak sauce,-1
 1049,black beans,-1
@@ -1056,17 +1056,17 @@ ingredient_id,ingredient_name,category_id
 1054,dried shiitake mushrooms,-1
 1055,wine vinegar,-1
 1056,farfalle pasta,-1
-1057,tomato,-1
+1057,tomato,30
 1058,jerk paste,-1
 1059,uncooked egg noodles,-1
-1060,gin,-1
-1061,spinach,-1
-1062,potato,-1
+1060,gin,3
+1061,spinach,27
+1062,potato,33
 1063,oil for frying,-1
 1064,fish sauce,-1
 1065,sliced red bell peppers,-1
 1066,fresh parsley,-1
-1067,shallots,-1
+1067,shallots,27
 1068,raspberry vinegar,-1
 1069,fresh,-1
 1070,cilantro,-1
@@ -1119,9 +1119,9 @@ ingredient_id,ingredient_name,category_id
 1117,orange marmalade,-1
 1118,low-fat cream of celery soup,-1
 1119,low fat mozzarella cheese,-1
-1120,cocoa powder,-1
+1120,cocoa powder,24
 1121,whole peeled tomatoes with juice,-1
-1122,kidney beans,-1
+1122,kidney beans,23
 1123,cream of chicken soup mix,-1
 1124,finely chopped onion,-1
 1125,chopped tomatoes,-1
@@ -1156,7 +1156,7 @@ ingredient_id,ingredient_name,category_id
 1154,fat-free mayonnaise,-1
 1155,seasoned salt,-1
 1156,picante sauce,-1
-1157,cabbage,-1
+1157,cabbage,28
 1158,greek-style seasoning,-1
 1159,frozen chicken wings,-1
 1160,fresh chicken livers,-1
@@ -1174,19 +1174,19 @@ ingredient_id,ingredient_name,category_id
 1172,chopped red bell pepper,-1
 1173,cooked chopped broccoli,-1
 1174,pitted prunes,-1
-1175,capers,-1
+1175,capers,18
 1176,red wine vinegar,-1
 1177,artichoke hearts,-1
 1178,mustard powder,-1
 1179,burgundy wine,-1
-1180,sweet potato,-1
+1180,sweet potato,29
 1181,chile sauce,-1
 1182,fresh chopped broccoli,-1
 1183,spinach tagliatelle pasta,-1
 1184,boneless chicken breast half,-1
 1185,chicken broth base,-1
 1186,crushed corn flake cereal crumbs,-1
-1187,lettuce,-1
+1187,lettuce,27
 1188,chinese noodles,-1
 1189,seasoned rice vinegar,-1
 1190,ground pork,-1
@@ -1199,7 +1199,7 @@ ingredient_id,ingredient_name,category_id
 1197,american processed  cheese,-1
 1198,reduced fat cream of chicken soup,-1
 1199,low-fat,-1
-1200,green beans,-1
+1200,green beans,27
 1201,diced onion,-1
 1202,chili beans,-1
 1203,shredded colby longhorn cheese,-1
@@ -1210,7 +1210,7 @@ ingredient_id,ingredient_name,category_id
 1208,frozen mixed vegetables,-1
 1209,wide egg noodles,-1
 1210,dry ziti pasta,-1
-1211,broccoli,-1
+1211,broccoli,28
 1212,artichoke hearts in water,-1
 1213,breaded and fried skinless,-1
 1214,browning sauce,-1
@@ -1232,14 +1232,14 @@ ingredient_id,ingredient_name,category_id
 1230,chopped mixed vegetables,-1
 1231,scalloped potato mix,-1
 1232,herb-seasoned dry bread stuffing mix,-1
-1233,peas,-1
+1233,peas,23
 1234,refrigerated pizza crust,-1
 1235,saltine crackers,-1
 1236,julienned red bell pepper,-1
 1237,julienned yellow bell pepper,-1
 1238,julienned green bell pepper,-1
 1239,fresh thyme,-1
-1240,pasta,-1
+1240,pasta,1
 1241,sliced fresh mushrooms,-1
 1242,creme fraiche,-1
 1243,peanut oil for frying,-1
@@ -1252,11 +1252,11 @@ ingredient_id,ingredient_name,category_id
 1250,lowfat monterey jack cheese,-1
 1251,hot chutney,-1
 1252,prepared thai peanut sauce,-1
-1253,provolone cheese,-1
+1253,provolone cheese,7
 1254,ground hazelnuts,-1
 1255,hot chile paste,-1
 1256,button mushrooms,-1
-1257,barley,-1
+1257,barley,5
 1258,dark meat chicken pieces,-1
 1259,boneless chicken thighs,-1
 1260,red beans &amp; rice mix,-1
@@ -1286,7 +1286,7 @@ ingredient_id,ingredient_name,category_id
 1284,dry fettuccine pasta,-1
 1285,cinnamon stick,-1
 1286,white bread cubes,-1
-1287,cornbread,-1
+1287,cornbread,6
 1288,orange turnip,-1
 1289,bacon - cooked and crumbled,-1
 1290,rendered bacon fat,-1
@@ -1302,7 +1302,7 @@ ingredient_id,ingredient_name,category_id
 1300,fresh broccoli florets,-1
 1301,dry roasted sunflower seeds,-1
 1302,unbaked pie shell,-1
-1303,chestnuts,-1
+1303,chestnuts,21
 1304,chopped salted peanuts,-1
 1305,caramels,-1
 1306,frozen white corn,-1
@@ -1322,7 +1322,7 @@ ingredient_id,ingredient_name,category_id
 1320,turkey broth,-1
 1321,dark molasses,-1
 1322,chopped crystallized ginger,-1
-1323,feta cheese,-1
+1323,feta cheese,7
 1324,finely chopped green onions,-1
 1325,frozen puff pastry,-1
 1326,pearl onions,-1
@@ -1341,8 +1341,8 @@ ingredient_id,ingredient_name,category_id
 1339,cubed pumpkin bread,-1
 1340,sliced crimini mushrooms,-1
 1341,chopped fresh tarragon,-1
-1342,artichokes,-1
-1343,fennel,-1
+1342,artichokes,12
+1343,fennel,18
 1344,baking potato,-1
 1345,belgian endive,-1
 1346,medium tomato,-1
@@ -1355,25 +1355,25 @@ ingredient_id,ingredient_name,category_id
 1353,apple cider,-1
 1354,chopped fresh marjoram,-1
 1355,coarsely chopped carrots,-1
-1356,apple brandy,-1
+1356,apple brandy,3
 1357,baking potatoes,-1
-1358,rutabagas,-1
-1359,parsnips,-1
-1360,pie crust,-1
+1358,rutabagas,29
+1359,parsnips,29
+1360,pie crust,1
 1361,prepared,-1
 1362,prepared 8 inch pastry shell,-1
 1363,beef bouillon cube,-1
 1364,garlic pepper seasoning,-1
 1365,seedless red grapes,-1
 1366,diced apples,-1
-1367,kiwis,-1
+1367,kiwis,13
 1368,toasted,-1
 1369,creamed corn,-1
 1370,crushed saltine crackers,-1
 1371,cinnamon sticks,-1
 1372,crumbled cornbread,-1
 1373,shucked oysters,-1
-1374,turnips,-1
+1374,turnips,29
 1375,raw spanish peanuts,-1
 1376,miniature chocolate covered peanut butter cups,-1
 1377,bosc pears,-1
@@ -1384,7 +1384,7 @@ ingredient_id,ingredient_name,category_id
 1382,whole black peppercorns,-1
 1383,dried savory,-1
 1384,salt and freshly ground black pepper to taste,-1
-1385,parsnip,-1
+1385,parsnip,29
 1386,anchovy fillets,-1
 1387,turkey stock,-1
 1388,clean,-1
@@ -1448,7 +1448,7 @@ ingredient_id,ingredient_name,category_id
 1446,sparkling apple cider,-1
 1447,ice cubes,-1
 1448,fruit punch,-1
-1449,cocoa,-1
+1449,cocoa,22
 1450,whole or chopped walnuts,-1
 1451,small gum drops,-1
 1452,shoyu,-1
@@ -1468,12 +1468,12 @@ ingredient_id,ingredient_name,category_id
 1466,crushed ice,-1
 1467,powdered non-dairy creamer,-1
 1468,finely chopped pecans,-1
-1469,salmon,-1
+1469,salmon,11
 1470,lemon wedges,-1
 1471,shredded cabbage,-1
 1472,candied citrus peel,-1
 1473,sultana raisins,-1
-1474,fruit juice,-1
+1474,fruit juice,2
 1475,chocolate ice cream,-1
 1476,unopened,-1
 1477,ranch-style dressing mix,-1
@@ -1483,7 +1483,7 @@ ingredient_id,ingredient_name,category_id
 1481,diced sharp cheddar cheese,-1
 1482,raspberries,-1
 1483,merlot wine,-1
-1484,butternut squash,-1
+1484,butternut squash,13
 1485,salt and freshly ground black pepper,-1
 1486,candy-coated milk chocolate pieces,-1
 1487,leg of lamb,-1
@@ -1499,8 +1499,8 @@ ingredient_id,ingredient_name,category_id
 1497,firm ripe peaches,-1
 1498,crushed cinnamon stick,-1
 1499,maple flavored syrup,-1
-1500,cauliflower,-1
-1501,cucumber,-1
+1500,cauliflower,28
+1501,cucumber,31
 1502,whole allspice,-1
 1503,instant tea powder,-1
 1504,orange-flavored drink mix,-1
@@ -1513,7 +1513,7 @@ ingredient_id,ingredient_name,category_id
 1511,red candied pineapple,-1
 1512,green candied cherries,-1
 1513,green candied pineapple,-1
-1514,phyllo dough,-1
+1514,phyllo dough,1
 1515,lemon-flavored ice tea mix,-1
 1516,cinnamon oil,-1
 1517,crispy rice cereal squares,-1
@@ -1522,17 +1522,17 @@ ingredient_id,ingredient_name,category_id
 1520,mini candy-coated chocolate pieces,-1
 1521,whole vanilla bean,-1
 1522,milk chocolate with crispy rice,-1
-1523,mixed nuts,-1
+1523,mixed nuts,21
 1524,chocolate frosting,-1
 1525,vanilla rice milk,-1
 1526,vanilla flavored non-dairy frozen dessert,-1
-1527,wine,-1
+1527,wine,3
 1528,dry pectin,-1
 1529,chestnut puree,-1
 1530,minced red onion,-1
 1531,sliced radishes,-1
 1532,low-fat sweetened condensed milk,-1
-1533,pecans,-1
+1533,pecans,21
 1534,beau monde ô seasoning,-1
 1535,pineapple chunks - drained with juice reserved,-1
 1536,roasted spanish peanuts,-1
@@ -1581,7 +1581,7 @@ ingredient_id,ingredient_name,category_id
 1579,toasted hazelnuts,-1
 1580,lemon marmalade,-1
 1581,anise extract,-1
-1582,madeira wine,-1
+1582,madeira wine,3
 1583,white sugar for decoration,-1
 1584,milk chocolate candy kisses,-1
 1585,apricot spreadable fruit,-1
@@ -1682,7 +1682,7 @@ ingredient_id,ingredient_name,category_id
 1680,ground toasted hazelnuts,-1
 1681,soda crackers,-1
 1682,room temperature beer,-1
-1683,corn chips,-1
+1683,corn chips,1
 1684,junior baby food carrots,-1
 1685,fresh carrots,-1
 1686,softened cream cheese,-1
@@ -1734,9 +1734,9 @@ ingredient_id,ingredient_name,category_id
 1732,lemon curd,-1
 1733,dry infant cereal,-1
 1734,puffed wheat cereal,-1
-1735,coconut,-1
+1735,coconut,13
 1736,whole wheat bread,-1
-1737,yogurt,-1
+1737,yogurt,7
 1738,dried dates,-1
 1739,dry pancake mix,-1
 1740,powdered sugar,-1
@@ -1765,8 +1765,8 @@ ingredient_id,ingredient_name,category_id
 1763,glue,-1
 1764,tahini,-1
 1765,unsalted margarine,-1
-1766,corn,-1
-1767,macaroni,-1
+1766,corn,6
+1767,macaroni,24
 1768,cubed processed cheese food,-1
 1769,diced tomatoes with juice,-1
 1770,seashell pasta,-1
@@ -1780,8 +1780,8 @@ ingredient_id,ingredient_name,category_id
 1778,vine ripened tomatoes,-1
 1779,chopped fresh mint leaves,-1
 1780,freshly grated asiago cheese,-1
-1781,shrimp,-1
-1782,scallops,-1
+1781,shrimp,10
+1782,scallops,10
 1783,cooked elbow macaroni,-1
 1784,whole black olives,-1
 1785,sliced pepperoni sausage,-1
@@ -1789,7 +1789,7 @@ ingredient_id,ingredient_name,category_id
 1787,cavatelli pasta,-1
 1788,roasted red bell peppers,-1
 1789,tuna,-1
-1790,goat cheese,-1
+1790,goat cheese,7
 1791,coarsely chopped arugula,-1
 1792,quartered cherry tomatoes,-1
 1793,bone-in chicken breast,-1
@@ -1842,7 +1842,7 @@ ingredient_id,ingredient_name,category_id
 1840,celery tops,-1
 1841,rendered chicken fat,-1
 1842,thin egg noodles,-1
-1843,prawns,-1
+1843,prawns,10
 1844,prepared fresh cheese ravioli,-1
 1845,large portobello mushrooms,-1
 1846,diced green bell pepper,-1
@@ -1869,7 +1869,7 @@ ingredient_id,ingredient_name,category_id
 1867,extra-lean ground beef,-1
 1868,dry lasagna noodles,-1
 1869,shredded pepper jack cheese,-1
-1870,romano cheese,-1
+1870,romano cheese,7
 1871,uncooked orzo pasta,-1
 1872,yellow onions,-1
 1873,manicotti shells,-1
@@ -1881,7 +1881,7 @@ ingredient_id,ingredient_name,category_id
 1879,beef stock,-1
 1880,dry penne pasta,-1
 1881,sliced celery,-1
-1882,black-eyed peas,-1
+1882,black-eyed peas,23
 1883,crabmeat,-1
 1884,colored rotini pasta,-1
 1885,minced carrot,-1
@@ -1890,7 +1890,7 @@ ingredient_id,ingredient_name,category_id
 1888,freshly ground nutmeg,-1
 1889,fresh pasta sheets,-1
 1890,pie shell,-1
-1891,cucumbers,-1
+1891,cucumbers,31
 1892,pesto,-1
 1893,corkscrew pasta,-1
 1894,spaghetti with sauce,-1
@@ -1953,7 +1953,7 @@ ingredient_id,ingredient_name,category_id
 1951,thinly sliced red onion,-1
 1952,canned shrimp,-1
 1953,crab meat,-1
-1954,bok choy,-1
+1954,bok choy,28
 1955,blanched green peas,-1
 1956,sweet corn kernels,-1
 1957,dry macaroni and cheese,-1
@@ -1976,7 +1976,7 @@ ingredient_id,ingredient_name,category_id
 1974,instant mashed potato flakes,-1
 1975,jalapeno sauce,-1
 1976,shredded cheddar-monterey jack cheese blend,-1
-1977,tomatillo,-1
+1977,tomatillo,9
 1978,unbaked pie crust,-1
 1979,rome beauty apples - peeled,-1
 1980,comice pears - peeled,-1
@@ -1990,16 +1990,16 @@ ingredient_id,ingredient_name,category_id
 1988,pitted sour cherries,-1
 1989,prepared vanilla wafer crust,-1
 1990,fresh cherries,-1
-1991,lime,-1
+1991,lime,15
 1992,strawberry flavored yogurt,-1
 1993,pastry for a 9 inch double crust deep dish pie,-1
 1994,bitters,-1
 1995,whipped cream for serving,-1
-1996,macadamia nuts,-1
+1996,macadamia nuts,21
 1997,pitted cherries,-1
 1998,caramel squares,-1
 1999,chocolate sprinkles,-1
-2000,mangos,-1
+2000,mangos,13
 2001,instant tapioca,-1
 2002,graham cracker crust,-1
 2003,pastry for a single crust pie,-1
@@ -2025,7 +2025,7 @@ ingredient_id,ingredient_name,category_id
 2023,praline liqueur,-1
 2024,instant chocolate fudge pudding mix,-1
 2025,sliced peaches in heavy syrup,-1
-2026,nectarines,-1
+2026,nectarines,13
 2027,coarse granulated sugar,-1
 2028,unbaked pie crusts,-1
 2029,all-purpose apples,-1
@@ -2078,9 +2078,9 @@ ingredient_id,ingredient_name,category_id
 2076,diced cooked beef,-1
 2077,sweet pickle juice,-1
 2078,pineapple juice,-1
-2079,sorghum,-1
+2079,sorghum,5
 2080,fresh oregano,-1
-2081,pear,-1
+2081,pear,13
 2082,cook and serve vanilla pudding,-1
 2083,elderberries,-1
 2084,green tomatoes,-1
@@ -2093,7 +2093,7 @@ ingredient_id,ingredient_name,category_id
 2091,banana liqueur,-1
 2092,butter crackers,-1
 2093,vine-ripened tomatoes,-1
-2094,jicama,-1
+2094,jicama,33
 2095,frozen diced carrots,-1
 2096,ground cherries,-1
 2097,crushed toffee candy,-1
@@ -2110,7 +2110,7 @@ ingredient_id,ingredient_name,category_id
 2108,currant jelly,-1
 2109,tart apples,-1
 2110,fat free caramel dip,-1
-2111,squid,-1
+2111,squid,10
 2112,shrimp - cooked,-1
 2113,creamy italian-style salad dressing,-1
 2114,minced pimento,-1
@@ -2148,7 +2148,7 @@ ingredient_id,ingredient_name,category_id
 2146,coarse salt,-1
 2147,large shrimp,-1
 2148,cooked shrimp - peeled and deveined,-1
-2149,rainbow trout,-1
+2149,rainbow trout,11
 2150,minced capers,-1
 2151,red snapper,-1
 2152,white fish fillets,-1
@@ -2160,27 +2160,27 @@ ingredient_id,ingredient_name,category_id
 2158,fresh sea bass fillets,-1
 2159,round,-1
 2160,shredded white cheddar cheese,-1
-2161,catfish,-1
+2161,catfish,11
 2162,fat free catalina salad dressing,-1
 2163,dry fusilli pasta,-1
 2164,shelled and deveined shrimp,-1
-2165,clams,-1
+2165,clams,10
 2166,fresh shrimp,-1
-2167,lobsters,-1
+2167,lobsters,10
 2168,white potatoes,-1
 2169,fresh corn,-1
 2170,bratwurst,-1
-2171,hot dogs,-1
+2171,hot dogs,20
 2172,sweet onions,-1
 2173,frozen shrimp,-1
 2174,sweet chili sauce,-1
-2175,pink salmon,-1
+2175,pink salmon,11
 2176,chopped stewed tomatoes,-1
 2177,frozen,-1
 2178,halibut steak,-1
 2179,italian-style diced tomatoes,-1
 2180,freshly grated parmesan cheese,-1
-2181,saffron,-1
+2181,saffron,26
 2182,lobster tails,-1
 2183,sea bass,-1
 2184,cooked and cubed lobster meat,-1
@@ -2189,7 +2189,7 @@ ingredient_id,ingredient_name,category_id
 2187,chopped fresh basil leaves,-1
 2188,lemon - cut into wedges,-1
 2189,finely chopped carrots,-1
-2190,oysters,-1
+2190,oysters,10
 2191,lobster meat,-1
 2192,grouper fillets,-1
 2193,small jalapeno,-1
@@ -2210,13 +2210,13 @@ ingredient_id,ingredient_name,category_id
 2208,halibut steaks,-1
 2209,ground venison,-1
 2210,beef oxtail,-1
-2211,turnip,-1
+2211,turnip,29
 2212,dried mushrooms,-1
 2213,blade roast,-1
 2214,orange peel,-1
 2215,pickled pearl onions,-1
 2216,serrano chiles,-1
-2217,asparagus,-1
+2217,asparagus,32
 2218,fennel greens for garnish,-1
 2219,seasoned chicken broth,-1
 2220,peeled and cubed potatoes,-1
@@ -2239,7 +2239,7 @@ ingredient_id,ingredient_name,category_id
 2237,cooked navy beans,-1
 2238,cubed potatoes,-1
 2239,sliced potatoes,-1
-2240,sausage,-1
+2240,sausage,20
 2241,canned red beans,-1
 2242,frozen vegetable blend (peppers,-1
 2243,chicken soup base,-1
@@ -2271,7 +2271,7 @@ ingredient_id,ingredient_name,category_id
 2269,beef chuck roast,-1
 2270,oil,-1
 2271,dry great northern beans,-1
-2272,lima beans,-1
+2272,lima beans,23
 2273,white hominy,-1
 2274,frozen green beans,-1
 2275,dry mixed beans,-1
@@ -2313,16 +2313,16 @@ ingredient_id,ingredient_name,category_id
 2311,tom yum soup paste,-1
 2312,pork spareribs,-1
 2313,tomato-vegetable juice cocktail,-1
-2314,apple,-1
+2314,apple,13
 2315,soft tofu,-1
 2316,sweet onion,-1
 2317,kielbasa sausage,-1
 2318,ground peanuts,-1
-2319,jerusalem artichokes,-1
+2319,jerusalem artichokes,33
 2320,finely chopped black olives,-1
 2321,cooked macaroni,-1
 2322,whole chicken -- skin removed,-1
-2323,rutabaga,-1
+2323,rutabaga,29
 2324,diced cabbage,-1
 2325,chopped fresh green beans,-1
 2326,fried pork skins,-1
@@ -2342,15 +2342,15 @@ ingredient_id,ingredient_name,category_id
 2340,callaloo leaves or spinach,-1
 2341,salt beef,-1
 2342,green chile pepper,-1
-2343,okra,-1
+2343,okra,27
 2344,tomato - peeled,-1
 2345,whole artichokes,-1
 2346,dry vermouth,-1
 2347,dried brown lentils,-1
-2348,avocados,-1
+2348,avocados,13
 2349,cooked fresh shrimp,-1
 2350,fresh green onions,-1
-2351,bamboo shoots,-1
+2351,bamboo shoots,25
 2352,crab roe,-1
 2353,fresh crabmeat,-1
 2354,andouille sausage,-1
@@ -2366,12 +2366,12 @@ ingredient_id,ingredient_name,category_id
 2364,dried tiger lily buds,-1
 2365,chopped spinach,-1
 2366,ginger liqueur,-1
-2367,vinegar,-1
+2367,vinegar,24
 2368,peeled shrimp,-1
 2369,chinese rice wine,-1
 2370,finely chopped green onion,-1
 2371,chopped fresh ginger root,-1
-2372,wonton wrappers,-1
+2372,wonton wrappers,1
 2373,peeled and diced tomatoes with juice,-1
 2374,ground chicken breast,-1
 2375,sliced parsnip,-1
@@ -2390,7 +2390,7 @@ ingredient_id,ingredient_name,category_id
 2388,smoked turkey sausage,-1
 2389,dried basil leaves,-1
 2390,prepared pound cake,-1
-2391,wild duck,-1
+2391,wild duck,19
 2392,duck blood,-1
 2393,pork neck bones,-1
 2394,stale french bread,-1
@@ -2464,7 +2464,7 @@ ingredient_id,ingredient_name,category_id
 2462,smoked pork butt,-1
 2463,finely chopped cabbage,-1
 2464,hash brown potatoes,-1
-2465,succotash,-1
+2465,succotash,20
 2466,15 bean soup mix,-1
 2467,low-sodium salt,-1
 2468,adobo seasoning,-1
@@ -2481,7 +2481,7 @@ ingredient_id,ingredient_name,category_id
 2479,green olives with pimento,-1
 2480,refrigerated soft bread stick dough,-1
 2481,ground raw cranberries,-1
-2482,yams,-1
+2482,yams,33
 2483,cherry flavored jell-oÆ,-1
 2484,cranberry juice,-1
 2485,cubed cooked turkey,-1
@@ -2494,10 +2494,10 @@ ingredient_id,ingredient_name,category_id
 2492,bone-in ham with rind removed,-1
 2493,sangria wine,-1
 2494,whole berry cranberry sauce,-1
-2495,kumquats,-1
+2495,kumquats,15
 2496,diced green chile peppers,-1
-2497,bartlett pears,-1
-2498,winter squash,-1
+2497,bartlett pears,13
+2498,winter squash,13
 2499,tarragon vinegar,-1
 2500,condensed cream of chicken and mushroom soup,-1
 2501,dry corn bread mix,-1
@@ -2512,11 +2512,11 @@ ingredient_id,ingredient_name,category_id
 2510,dry cornbread mix,-1
 2511,red cabbage,-1
 2512,chopped fennel greens,-1
-2513,brussels sprouts,-1
+2513,brussels sprouts,28
 2514,sugar-free organic apple juice,-1
 2515,whole pickled beets,-1
 2516,dry hot mustard,-1
-2517,butter beans,-1
+2517,butter beans,23
 2518,baked beans,-1
 2519,orange with peel,-1
 2520,pitted white cherries,-1
@@ -2530,7 +2530,7 @@ ingredient_id,ingredient_name,category_id
 2528,fresh chopped tarragon,-1
 2529,raw whole pumpkin seeds,-1
 2530,frozen peas and onions,-1
-2531,raisin bread,-1
+2531,raisin bread,1
 2532,fudge striped shortbread cookies,-1
 2533,candy corn,-1
 2534,instant sugar-free vanilla pudding mix,-1
@@ -2539,14 +2539,14 @@ ingredient_id,ingredient_name,category_id
 2537,pre-cooked ham,-1
 2538,cubed day old french bread,-1
 2539,duck,-1
-2540,turkey,-1
+2540,turkey,19
 2541,prepared sausage and oyster dressing,-1
 2542,unseasoned dry bread stuffing mix,-1
 2543,oyster pieces,-1
 2544,chocolate shavings,-1
 2545,small eggplant,-1
 2546,frozen broad beans,-1
-2547,couscous,-1
+2547,couscous,20
 2548,vegetable stock,-1
 2549,minced hot green chile peppers,-1
 2550,fresh cilantro leaves,-1
@@ -2572,14 +2572,14 @@ ingredient_id,ingredient_name,category_id
 2570,ground toasted mixed nuts,-1
 2571,minced flat leaf parsley,-1
 2572,packed flat leaf parsley,-1
-2573,bulgur,-1
-2574,cashew nuts,-1
+2573,bulgur,5
+2574,cashew nuts,21
 2575,medium onion,-1
 2576,shredded fat-free mozzarella cheese,-1
 2577,red chili pepper,-1
 2578,stewed prunes,-1
 2579,pareve margarine,-1
-2580,avocado,-1
+2580,avocado,13
 2581,firm silken tofu,-1
 2582,nondairy cream cheese,-1
 2583,vegetarian refried beans,-1
@@ -2595,7 +2595,7 @@ ingredient_id,ingredient_name,category_id
 2593,shredded low-fat mozzarella cheese,-1
 2594,summer squash,-1
 2595,peanut or walnut oil,-1
-2596,tofu,-1
+2596,tofu,24
 2597,large eggplants,-1
 2598,large eggplant,-1
 2599,medium salsa,-1
@@ -2616,7 +2616,7 @@ ingredient_id,ingredient_name,category_id
 2614,silken tofu,-1
 2615,pitas,-1
 2616,spanish seasoning,-1
-2617,pigeon peas,-1
+2617,pigeon peas,23
 2618,unsweetened coconut cream,-1
 2619,tamarind pulp,-1
 2620,chickpea flour,-1
@@ -2664,7 +2664,7 @@ ingredient_id,ingredient_name,category_id
 2662,strawberries - cleaned,-1
 2663,peach pie filling,-1
 2664,fat-free creamy salad dressing,-1
-2665,pimentos,-1
+2665,pimentos,30
 2666,fresh cheese-filled tortellini,-1
 2667,tart green apples,-1
 2668,raspberry vinaigrette salad dressing,-1
@@ -2679,7 +2679,7 @@ ingredient_id,ingredient_name,category_id
 2677,nonfat evaporated milk,-1
 2678,diced firm tofu,-1
 2679,caraway seeds,-1
-2680,pimento,-1
+2680,pimento,30
 2681,maple-flavored bacon,-1
 2682,minced green onions,-1
 2683,small gravenstein apples,-1
@@ -2687,7 +2687,7 @@ ingredient_id,ingredient_name,category_id
 2685,bibb lettuce - rinsed,-1
 2686,red apple,-1
 2687,granny smith apple,-1
-2688,nectarine,-1
+2688,nectarine,13
 2689,butter lettuce,-1
 2690,vinaigrette salad dressing,-1
 2691,frozen french-style green beans,-1
@@ -2733,7 +2733,7 @@ ingredient_id,ingredient_name,category_id
 2731,jumbo black olives,-1
 2732,cashew pieces,-1
 2733,shredded coleslaw mix,-1
-2734,pears,-1
+2734,pears,13
 2735,bermuda onion,-1
 2736,rainbow tortellini pasta,-1
 2737,hard salami,-1
@@ -2780,11 +2780,11 @@ ingredient_id,ingredient_name,category_id
 2778,sherry wine vinegar,-1
 2779,blackberries,-1
 2780,spinach - chopped,-1
-2781,watercress,-1
+2781,watercress,25
 2782,cubed watermelon,-1
 2783,chopped snow peas,-1
-2784,white pepper,-1
-2785,quinoa,-1
+2784,white pepper,26
+2785,quinoa,5
 2786,kumquats - seeded and chopped,-1
 2787,bosc pear - peeled,-1
 2788,caesar salad dressing,-1
@@ -2884,7 +2884,7 @@ ingredient_id,ingredient_name,category_id
 2882,beef roast,-1
 2883,raw porcini mushrooms,-1
 2884,beef tongue,-1
-2885,rye bread,-1
+2885,rye bread,1
 2886,calves&#x27; livers,-1
 2887,steaks,-1
 2888,stout beer,-1
@@ -2993,7 +2993,7 @@ ingredient_id,ingredient_name,category_id
 2991,water-packed tuna,-1
 2992,finely ground salt pork,-1
 2993,cooked chicken liver,-1
-2994,truffle,-1
+2994,truffle,17
 2995,transparent apples - peeled,-1
 2996,instant powdered milk,-1
 2997,powdered buttermilk,-1
@@ -3020,7 +3020,7 @@ ingredient_id,ingredient_name,category_id
 3018,chocolate puff cereal,-1
 3019,american cheese slices,-1
 3020,diced raw beef,-1
-3021,crawfish,-1
+3021,crawfish,10
 3022,sliced andouille sausage,-1
 3023,smoked ham hock,-1
 3024,cooked rice,-1
@@ -3200,7 +3200,7 @@ ingredient_id,ingredient_name,category_id
 3198,oyster crackers,-1
 3199,milk chocolate with almonds,-1
 3200,crushed gingersnap cookies,-1
-3201,kiwi,-1
+3201,kiwi,13
 3202,sweetened whipped cream,-1
 3203,pecan shortbread cookies,-1
 3204,gluten flour,-1
@@ -3259,12 +3259,12 @@ ingredient_id,ingredient_name,category_id
 3257,rump roast,-1
 3258,french rolls,-1
 3259,bacon grease,-1
-3260,green tea,-1
+3260,green tea,4
 3261,ginger ale soda,-1
 3262,sirloin,-1
 3263,lemon bar mix,-1
 3264,beef filet,-1
-3265,chili,-1
+3265,chili,20
 3266,canned sliced green chiles,-1
 3267,beef sirloin,-1
 3268,fresh hot chile peppers,-1
@@ -3276,7 +3276,7 @@ ingredient_id,ingredient_name,category_id
 3274,chuck roast,-1
 3275,dashi kombu,-1
 3276,bonito shavings,-1
-3277,sake,-1
+3277,sake,3
 3278,frozen toasted mochi squares,-1
 3279,naruto,-1
 3280,yuzu peel,-1
@@ -3318,14 +3318,14 @@ ingredient_id,ingredient_name,category_id
 3316,shredded bok choy,-1
 3317,boneless chicken breasts,-1
 3318,dry mustard,-1
-3319,kale,-1
+3319,kale,28
 3320,chopped and toasted walnuts,-1
 3321,condensed vegetable beef soup,-1
 3322,medium sized apples,-1
 3323,tri-tip roast,-1
 3324,beef skirt steak,-1
 3325,sourdough bread,-1
-3326,grapes,-1
+3326,grapes,13
 3327,boneless lean beef,-1
 3328,cream of mushroom soup,-1
 3329,french salad dressing,-1
@@ -3345,9 +3345,9 @@ ingredient_id,ingredient_name,category_id
 3343,fresh cauliflower florets,-1
 3344,fresh diced kiwi fruit,-1
 3345,fresh diced peaches,-1
-3346,apple cider vinegar,-1
+3346,apple cider vinegar,24
 3347,fine sea salt to taste,-1
-3348,chickpeas,-1
+3348,chickpeas,23
 3349,shredded colby-monterey jack cheese,-1
 3350,red enchilada sauce,-1
 3351,cream-style horseradish sauce,-1
@@ -3357,7 +3357,7 @@ ingredient_id,ingredient_name,category_id
 3355,fluffy white frosting mix,-1
 3356,white bread -  soaked with water,-1
 3357,thin wheat crackers,-1
-3358,pie crusts,-1
+3358,pie crusts,1
 3359,shredded cheddar or colby jack cheese,-1
 3360,soft white bread,-1
 3361,chopped salted almonds,-1
@@ -3379,7 +3379,7 @@ ingredient_id,ingredient_name,category_id
 3377,chunky peanut butter,-1
 3378,lean top sirloin,-1
 3379,chopped pimento-stuffed green olives,-1
-3380,mango,-1
+3380,mango,13
 3381,thai pepper garlic sauce,-1
 3382,long-grain rice,-1
 3383,ground cayenne pepper to taste,-1
@@ -3447,8 +3447,8 @@ ingredient_id,ingredient_name,category_id
 3445,kosher red wine,-1
 3446,pork butt roast,-1
 3447,gooseberries,-1
-3448,lentils,-1
-3449,bagels,-1
+3448,lentils,23
+3449,bagels,1
 3450,dried red chile peppers,-1
 3451,coriander seeds,-1
 3452,anise seeds,-1
@@ -3497,7 +3497,7 @@ ingredient_id,ingredient_name,category_id
 3495,sloppy joe seasoning,-1
 3496,mashed banana,-1
 3497,sweet hot mustard,-1
-3498,wasabi,-1
+3498,wasabi,28
 3499,sweet red peppers,-1
 3500,fresh tomato sauce,-1
 3501,uncooked rigatoni pasta,-1
@@ -3507,7 +3507,7 @@ ingredient_id,ingredient_name,category_id
 3505,chunky applesauce,-1
 3506,green onions with tops,-1
 3507,cubed processed cheese,-1
-3508,papaya,-1
+3508,papaya,13
 3509,shredded processed cheese,-1
 3510,instant cheddar cheese sauce mix,-1
 3511,chopped walnuts to taste,-1
@@ -3531,7 +3531,7 @@ ingredient_id,ingredient_name,category_id
 3529,pickled beets,-1
 3530,hard boiled eggs,-1
 3531,chopped daikon,-1
-3532,camembert cheese,-1
+3532,camembert cheese,7
 3533,uncooked linguine pasta,-1
 3534,chopped walnuts or pecans to taste,-1
 3535,sliced cooked turkey,-1
@@ -3598,7 +3598,7 @@ ingredient_id,ingredient_name,category_id
 3596,peeled and cubed horseradish root,-1
 3597,frozen potato rounds,-1
 3598,caramel flavored frosting,-1
-3599,strawberry,-1
+3599,strawberry,9
 3600,bananas -- peeled,-1
 3601,unsalted butter - chilled,-1
 3602,fresh asparagus spears,-1
@@ -3614,12 +3614,12 @@ ingredient_id,ingredient_name,category_id
 3612,top sirloin - cut into 2 inch strips,-1
 3613,wasabi powder,-1
 3614,lemon or lime juice,-1
-3615,gruyere cheese,-1
+3615,gruyere cheese,7
 3616,prepared pie crust,-1
 3617,(1 1/4 inch thick) pork chops,-1
 3618,beef cube steak,-1
 3619,sugar cube,-1
-3620,coffee,-1
+3620,coffee,4
 3621,sugar-free instant pudding mix,-1
 3622,instant french vanilla pudding,-1
 3623,sugar free strawberry glaze,-1
@@ -3652,7 +3652,7 @@ ingredient_id,ingredient_name,category_id
 3650,curry paste,-1
 3651,plum vinegar,-1
 3652,(3/4 inch thick) center cut pork chops,-1
-3653,red beets,-1
+3653,red beets,29
 3654,french vanilla cake mix,-1
 3655,cubed or shredded ham,-1
 3656,boneless pork roast,-1
@@ -3712,7 +3712,7 @@ ingredient_id,ingredient_name,category_id
 3710,light blueberry pie filling,-1
 3711,orange juice concentrate,-1
 3712,stew beef,-1
-3713,hot dog,-1
+3713,hot dog,20
 3714,cleaned shrimp,-1
 3715,hot pepper sauce to taste,-1
 3716,orange flavored jell-oÆ,-1
@@ -3731,7 +3731,7 @@ ingredient_id,ingredient_name,category_id
 3729,shrimp - peeled,-1
 3730,colby cheese,-1
 3731,fresh crumbled bread,-1
-3732,pita bread,-1
+3732,pita bread,1
 3733,high protein wheat flour,-1
 3734,large shredded wheat cereal biscuits,-1
 3735,whole dungeness crab,-1
@@ -3746,7 +3746,7 @@ ingredient_id,ingredient_name,category_id
 3744,frozen cooked artichoke hearts,-1
 3745,shelled walnuts,-1
 3746,cracker crumbs,-1
-3747,parsley,-1
+3747,parsley,26
 3748,canned crushed tomatoes,-1
 3749,dried minced garlic,-1
 3750,hominy grits,-1
@@ -3779,7 +3779,7 @@ ingredient_id,ingredient_name,category_id
 3777,green apples - washed,-1
 3778,dark chocolate candy,-1
 3779,chopped pitted dates,-1
-3780,eggplants,-1
+3780,eggplants,27
 3781,freeze-dried chives,-1
 3782,unbaked pizza crust,-1
 3783,finely shredded zucchini or yellow summer squash,-1
@@ -3791,10 +3791,10 @@ ingredient_id,ingredient_name,category_id
 3789,fudge stripe cookies,-1
 3790,peeled and cubed butternut squash,-1
 3791,lightly packed brown sugar,-1
-3792,pumpkin,-1
+3792,pumpkin,13
 3793,sweetened blueberries,-1
 3794,chocolate covered crispy peanut butter flavored candy,-1
-3795,red salmon,-1
+3795,red salmon,11
 3796,yellow cake mix with pudding,-1
 3797,butterscotch ice cream topping,-1
 3798,dill pickle spear,-1
@@ -3808,7 +3808,7 @@ ingredient_id,ingredient_name,category_id
 3806,lamb shank,-1
 3807,pork sausage links,-1
 3808,medium green bell peppers,-1
-3809,sausages,-1
+3809,sausages,20
 3810,crushed tomatoes with juice,-1
 3811,fresh shrimp - peeled,-1
 3812,hot cooked rice,-1
@@ -3921,12 +3921,12 @@ ingredient_id,ingredient_name,category_id
 3919,bite-size cheddar cheese crackers,-1
 3920,lemon gin,-1
 3921,cold tea,-1
-3922,vanilla,-1
-3923,milk powder,-1
+3922,vanilla,16
+3923,milk powder,7
 3924,prepared green decorating icing,-1
-3925,persimmons,-1
+3925,persimmons,13
 3926,sifted whole wheat pastry flour,-1
-3927,macaroni and cheese,-1
+3927,macaroni and cheese,20
 3928,peeled ground tomatoes in paste,-1
 3929,italian-style tomato paste,-1
 3930,pork meat,-1
@@ -3993,7 +3993,7 @@ ingredient_id,ingredient_name,category_id
 3991,fresh water chestnuts,-1
 3992,beef frankfurters,-1
 3993,unbaked 9 inch pie crusts,-1
-3994,golden currants,-1
+3994,golden currants,13
 3995,extra light olive oil,-1
 3996,whole lychees,-1
 3997,canned grated coconut in syrup,-1
@@ -4052,7 +4052,7 @@ ingredient_id,ingredient_name,category_id
 4050,strong brewed black tea,-1
 4051,sugar-based curing mixture,-1
 4052,smoked paprika,-1
-4053,pepper,-1
+4053,pepper,26
 4054,lemon peel,-1
 4055,grated lime peel,-1
 4056,chocolate milk,-1
@@ -4100,7 +4100,7 @@ ingredient_id,ingredient_name,category_id
 4098,peach daiquiri mix,-1
 4099,pure maple syrup,-1
 4100,clear malt liquor,-1
-4101,blackberry brandy,-1
+4101,blackberry brandy,3
 4102,oil-packed sun-dried tomatoes,-1
 4103,ripe peaches,-1
 4104,poppyseed salad dressing,-1
@@ -4127,13 +4127,13 @@ ingredient_id,ingredient_name,category_id
 4125,orange bitters,-1
 4126,unsweetened lemonade drink mix,-1
 4127,cranberry ginger ale,-1
-4128,red kidney beans,-1
+4128,red kidney beans,23
 4129,condensed chicken gumbo soup,-1
 4130,boiled ham,-1
 4131,diced jalapeno chile pepper,-1
 4132,chive and onion cream cheese,-1
 4133,green cabbage,-1
-4134,cognac,-1
+4134,cognac,3
 4135,finely diced red onion,-1
 4136,lillet blanc,-1
 4137,peach brandy,-1
@@ -4174,7 +4174,7 @@ ingredient_id,ingredient_name,category_id
 4172,shredded green bell pepper,-1
 4173,shredded rell bell pepper,-1
 4174,shredded celery,-1
-4175,pineapple,-1
+4175,pineapple,13
 4176,helix snails,-1
 4177,apple preserves,-1
 4178,jalapeno chile peppers,-1
@@ -4197,7 +4197,7 @@ ingredient_id,ingredient_name,category_id
 4195,prepared fat free vanilla pudding,-1
 4196,ground thyme,-1
 4197,crispy butter cookies,-1
-4198,basmati rice,-1
+4198,basmati rice,5
 4199,yellow mustard,-1
 4200,jalapeno cream cheese,-1
 4201,pimento cheese spread,-1
@@ -4217,7 +4217,7 @@ ingredient_id,ingredient_name,category_id
 4215,boneless pork ribs,-1
 4216,large chunks of peeled potatoes,-1
 4217,french bread cubes,-1
-4218,broccoli rabe,-1
+4218,broccoli rabe,28
 4219,brown rice,-1
 4220,reduced calorie white bread,-1
 4221,dessert tofu,-1
@@ -4257,7 +4257,7 @@ ingredient_id,ingredient_name,category_id
 4255,pork sirloin,-1
 4256,jumbo shrimp,-1
 4257,minced fresh cilantro leaves,-1
-4258,haddock,-1
+4258,haddock,11
 4259,lime wedge,-1
 4260,gummi snakes candy,-1
 4261,frozen brussel sprouts,-1
@@ -4270,11 +4270,11 @@ ingredient_id,ingredient_name,category_id
 4268,dry sago,-1
 4269,coarsely ground peanuts,-1
 4270,chopped cilantro,-1
-4271,bagel,-1
+4271,bagel,1
 4272,drained,-1
 4273,salmon fillets or steaks,-1
 4274,red swiss chard,-1
-4275,oyster mushrooms,-1
+4275,oyster mushrooms,17
 4276,turkey breast cutlets,-1
 4277,hollandaise sauce mix,-1
 4278,thinly sliced white onions,-1
@@ -4293,7 +4293,7 @@ ingredient_id,ingredient_name,category_id
 4291, finely chopped,-1
 4292,pork liver,-1
 4293,chipotle salsa,-1
-4294,red currants,-1
+4294,red currants,13
 4295,cooking apple - peeled,-1
 4296,spring roll wrappers,-1
 4297,cheese curds,-1
@@ -4377,7 +4377,7 @@ ingredient_id,ingredient_name,category_id
 4375,rice wrappers,-1
 4376,orange food color,-1
 4377,whole cardamom,-1
-4378,cardamom,-1
+4378,cardamom,26
 4379,fresh peach - peeled,-1
 4380,kiwi -- peeled,-1
 4381,fat free margarine spread,-1
@@ -4408,7 +4408,7 @@ ingredient_id,ingredient_name,category_id
 4406,strawberry pie filling,-1
 4407,red pepper sauce to taste,-1
 4408,raw lobster tail,-1
-4409,yellowfin tuna,-1
+4409,yellowfin tuna,11
 4410,canned navy beans,-1
 4411,beef sirloin strips,-1
 4412,fresh parsley leaves,-1
@@ -4514,7 +4514,7 @@ ingredient_id,ingredient_name,category_id
 4512,condensed oyster stew,-1
 4513,condensed onion soup,-1
 4514,chocolate confectioners&#x27; coating,-1
-4515,ice cream,-1
+4515,ice cream,20
 4516,pepper jack cheese,-1
 4517,prepared pizza crusts,-1
 4518,spicy pork sausage,-1
@@ -4529,7 +4529,7 @@ ingredient_id,ingredient_name,category_id
 4527,bagel chips,-1
 4528,arugula - rinsed,-1
 4529,hot bread roll mix with yeast,-1
-4530,chard,-1
+4530,chard,27
 4531,dried chipped beef,-1
 4532,cooked baby shrimp,-1
 4533,chopped sweet onions,-1
@@ -4586,7 +4586,7 @@ ingredient_id,ingredient_name,category_id
 4584,shelled pecans,-1
 4585,chopped fresh thai basil,-1
 4586,garlic chili sauce,-1
-4587,roquefort cheese,-1
+4587,roquefort cheese,7
 4588,dry ranch salad dressing mix,-1
 4589,poblano pepper,-1
 4590,halved green grapes,-1
@@ -4599,8 +4599,8 @@ ingredient_id,ingredient_name,category_id
 4597,dill pickle spears,-1
 4598,green or red pepper jelly,-1
 4599,almond toffee bits,-1
-4600,pomegranates,-1
-4601,shallot,-1
+4600,pomegranates,13
+4601,shallot,27
 4602,yellow-fleshed sweet potatoes,-1
 4603,ground nutmeg to taste,-1
 4604,amarettini cookies,-1
@@ -4616,13 +4616,13 @@ ingredient_id,ingredient_name,category_id
 4614,ripe avocado - peeled,-1
 4615,greek pepperoncini peppers,-1
 4616,shredded cooked turkey,-1
-4617,sorrel,-1
+4617,sorrel,18
 4618,any color liquid food color,-1
 4619,plain salted potato chips,-1
 4620,deep dish frozen pie crust,-1
 4621,chocolate liqueur,-1
 4622,rum based coffee liqueur,-1
-4623,,-1
+4623,,23
 4624,cubed pork stew meat,-1
 4625,peeled crawfish,-1
 4626,finely chopped dill pickle,-1
@@ -4640,7 +4640,7 @@ ingredient_id,ingredient_name,category_id
 4638,small fresh button mushrooms,-1
 4639,reduced-sodium soy sauce,-1
 4640,diced monterey jack cheese,-1
-4641,tomatillos,-1
+4641,tomatillos,9
 4642,chopped pimento pepper,-1
 4643,diced sweet pickles,-1
 4644,creole-style seasoning,-1
@@ -4787,7 +4787,7 @@ ingredient_id,ingredient_name,category_id
 4785,fruit cocktail in light syrup,-1
 4786,creole-style seasoning to taste,-1
 4787,instant yeast,-1
-4788,cooking oil,-1
+4788,cooking oil,34
 4789,boneless turkey breast,-1
 4790,ground oregano,-1
 4791,crushed saltine cracker crumbs,-1
@@ -4818,7 +4818,7 @@ ingredient_id,ingredient_name,category_id
 4816,deli sliced corned beef,-1
 4817,goose breast,-1
 4818,long grain and wild rice mixture,-1
-4819,carambola,-1
+4819,carambola,13
 4820,frozen brussels sprouts,-1
 4821,minced white onion,-1
 4822,unpacked brown sugar,-1
@@ -4887,7 +4887,7 @@ ingredient_id,ingredient_name,category_id
 4885,chicken-flavored ramen noodles,-1
 4886,arrowroot biscuits,-1
 4887,prepared coconut pecan frosting,-1
-4888,soybean oil,-1
+4888,soybean oil,23
 4889,milk chocolate candy bars,-1
 4890,high-protein crisp rice and wheat cereal,-1
 4891,diced candied citron,-1
@@ -4919,7 +4919,7 @@ ingredient_id,ingredient_name,category_id
 4917,pitted and sliced plums,-1
 4918,prune puree,-1
 4919,prepared yellow frosting,-1
-4920,anise,-1
+4920,anise,26
 4921,poppyseed filling,-1
 4922,chopped fresh strawberries,-1
 4923,rice flour,-1
@@ -4928,8 +4928,8 @@ ingredient_id,ingredient_name,category_id
 4926,chocolate shell topping,-1
 4927,crushed savory,-1
 4928,seafood cocktail sauce,-1
-4929,crackers,-1
-4930,orange roughy,-1
+4929,crackers,5
+4930,orange roughy,11
 4931,shiitake mushrooms,-1
 4932,whole carrots,-1
 4933,dry egg noodles,-1
