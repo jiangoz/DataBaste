@@ -48,7 +48,7 @@ create table ingredient (
 ingredient_id int,
 ingredient_name varchar(60) not null,
 category_id int,
-primary key (ingreient_id),
+primary key (ingredient_id),
 foreign key (category_id) references category(category_id)
 );
 
@@ -60,7 +60,7 @@ foreign key (pubchem_id) references molecule(pubchem_id)
 );
 
 create table amount (
-amount int not null,
+amount float(8) not null,
 unit varchar(45),
 recipe_id int,
 ingredient_id int,
