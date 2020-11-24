@@ -3,7 +3,7 @@ ingredient_id,ingredient_name,category_id
 1,warm water,-1
 2,white sugar,-1
 3,salt,-1
-4,eggs,-1
+4,eggs,0
 5,butter,-1
 6,all-purpose flour,-1
 7,baking powder,-1
@@ -26,7 +26,7 @@ ingredient_id,ingredient_name,category_id
 24,grated apple,-1
 25,chopped walnuts,-1
 26,buttermilk,-1
-27,egg,-1
+27,egg,0
 28,shortening,-1
 29,scalded milk,-1
 30,egg yolks,-1
@@ -49,7 +49,7 @@ ingredient_id,ingredient_name,category_id
 47,diced pimento peppers,-1
 48,chopped jalapeno peppers,-1
 49,real maple syrup,-1
-50,bread,-1
+50,bread,1
 51,salt to taste,-1
 52,light brown sugar,-1
 53,unsweetened cocoa powder,-1
@@ -311,7 +311,7 @@ ingredient_id,ingredient_name,category_id
 309,neufchatel cheese,-1
 310,plum baby food,-1
 311,chopped nuts,-1
-312,lemon flavored jell-oÆ,-1
+312,lemon flavored jell-o√Ü,-1
 313,vanilla sugar,-1
 314,chocolate cake mix,-1
 315,cherry pie filling,-1
@@ -352,7 +352,7 @@ ingredient_id,ingredient_name,category_id
 350,chocolate cookie crumbs,-1
 351,gummi worms,-1
 352,non-instant chocolate pudding mix,-1
-353,strawberry flavored jell-oÆ,-1
+353,strawberry flavored jell-o√Ü,-1
 354,frozen strawberries,-1
 355,fruit cocktail,-1
 356,instant dessert topping,-1
@@ -448,7 +448,7 @@ ingredient_id,ingredient_name,category_id
 446,marshmallow creme,-1
 447,finely chopped walnuts,-1
 448,orange cake mix,-1
-449,orange flavored jell-oÆ mix,-1
+449,orange flavored jell-o√Ü mix,-1
 450,devil&#x27;s food cake mix,-1
 451,green apples,-1
 452,finely chopped butternuts,-1
@@ -484,7 +484,7 @@ ingredient_id,ingredient_name,category_id
 482,peanut butter chips,-1
 483,salted peanuts,-1
 484,crisp rice cereal,-1
-485,blackberry jell-oÆ,-1
+485,blackberry jell-o√Ü,-1
 486,blackberry wine,-1
 487,pecan halves,-1
 488,brandy flavoring,-1
@@ -562,14 +562,14 @@ ingredient_id,ingredient_name,category_id
 560,1 recipe williamsburg butter frosting,-1
 561,seedless raspberry jam,-1
 562,ground pecans,-1
-563,fruit flavored jell-oÆ mix,-1
+563,fruit flavored jell-o√Ü mix,-1
 564,white cake layers,-1
-565,lime flavored jell-oÆ mix,-1
+565,lime flavored jell-o√Ü mix,-1
 566,prepared graham cracker crust,-1
 567,prepared 8 inch pastry shells,-1
 568,apricot baby food,-1
-569,lemon flavored jell-oÆ mix,-1
-570,raspberry flavored jell-oÆ mix,-1
+569,lemon flavored jell-o√Ü mix,-1
+570,raspberry flavored jell-o√Ü mix,-1
 571,candied pineapple slices,-1
 572,dried mixed fruit,-1
 573,chopped candied mixed fruit peel,-1
@@ -711,7 +711,7 @@ ingredient_id,ingredient_name,category_id
 709,finely chopped peanuts,-1
 710,chopped granny smith apples,-1
 711,diced peaches,-1
-712,mountain dewô,-1
+712,mountain dew√¥,-1
 713,fat-free evaporated milk,-1
 714,chopped fresh figs,-1
 715,piping gel,-1
@@ -733,7 +733,7 @@ ingredient_id,ingredient_name,category_id
 731,quartered strawberries,-1
 732,extra virgin olive oil,-1
 733,small purple grapes,-1
-734,baby ruth ô candy bars,-1
+734,baby ruth √¥ candy bars,-1
 735,chopped peanuts,-1
 736,brown sugar twin,-1
 737,seedless fruit preserves,-1
@@ -1314,9 +1314,9 @@ ingredient_id,ingredient_name,category_id
 1312,tomatoes - peeled,-1
 1313,diced orange segments,-1
 1314,fresh or frozen cranberries,-1
-1315,cherry flavored jell-oÆ mix,-1
+1315,cherry flavored jell-o√Ü mix,-1
 1316,chopped red apple,-1
-1317,black cherry flavored jell-oÆ mix,-1
+1317,black cherry flavored jell-o√Ü mix,-1
 1318,whole corn kernels,-1
 1319,dry bread cubes,-1
 1320,turkey broth,-1
@@ -1533,7 +1533,7 @@ ingredient_id,ingredient_name,category_id
 1531,sliced radishes,-1
 1532,low-fat sweetened condensed milk,-1
 1533,pecans,-1
-1534,beau monde ô seasoning,-1
+1534,beau monde √¥ seasoning,-1
 1535,pineapple chunks - drained with juice reserved,-1
 1536,roasted spanish peanuts,-1
 1537,tart apples - peeled,-1
@@ -2013,7 +2013,7 @@ ingredient_id,ingredient_name,category_id
 2011,prepared tart shells,-1
 2012,creme de cacao,-1
 2013,huckleberries,-1
-2014,watermelon flavored jell-oÆ,-1
+2014,watermelon flavored jell-o√Ü,-1
 2015,watermelon,-1
 2016,zucchini - peeled,-1
 2017,shortbread tart crust,-1
@@ -2053,7 +2053,7 @@ ingredient_id,ingredient_name,category_id
 2051,fine bread crumbs,-1
 2052,unbaked 9 inch pie crust,-1
 2053,mint chocolate chip ice cream,-1
-2054,pineapple jell-oÆ,-1
+2054,pineapple jell-o√Ü,-1
 2055,whipped cream cheese,-1
 2056,vegetable shortening,-1
 2057,red leicester cheese,-1
@@ -2184,7 +2184,7 @@ ingredient_id,ingredient_name,category_id
 2182,lobster tails,-1
 2183,sea bass,-1
 2184,cooked and cubed lobster meat,-1
-2185,old bay seasoningô,-1
+2185,old bay seasoning√¥,-1
 2186,garlic and mushroom soup mix,-1
 2187,chopped fresh basil leaves,-1
 2188,lemon - cut into wedges,-1
@@ -2378,7 +2378,7 @@ ingredient_id,ingredient_name,category_id
 2376,long grain rice,-1
 2377,bow tie pasta,-1
 2378,medium zucchini,-1
-2379,laughing cowÆ light creamy swiss wedges,-1
+2379,laughing cow√Ü light creamy swiss wedges,-1
 2380,converted long-grain white rice,-1
 2381,sirloin steak,-1
 2382,ranch style chili beans,-1
@@ -2482,7 +2482,7 @@ ingredient_id,ingredient_name,category_id
 2480,refrigerated soft bread stick dough,-1
 2481,ground raw cranberries,-1
 2482,yams,-1
-2483,cherry flavored jell-oÆ,-1
+2483,cherry flavored jell-o√Ü,-1
 2484,cranberry juice,-1
 2485,cubed cooked turkey,-1
 2486,baked potatoes -- peeled,-1
@@ -2501,8 +2501,8 @@ ingredient_id,ingredient_name,category_id
 2499,tarragon vinegar,-1
 2500,condensed cream of chicken and mushroom soup,-1
 2501,dry corn bread mix,-1
-2502,cranberry flavored jell-oÆ mix,-1
-2503,cherry jell-oÆ,-1
+2502,cranberry flavored jell-o√Ü mix,-1
+2503,cherry jell-o√Ü,-1
 2504,frozen french cut green beans,-1
 2505,leftover gravy,-1
 2506,pickled jalapeno peppers,-1
@@ -2716,7 +2716,7 @@ ingredient_id,ingredient_name,category_id
 2714,romaine lettuce- rinsed,-1
 2715,chicken flavored rice mix,-1
 2716,salad seasoning mix,-1
-2717,orange-pineapple flavored jell-oÆ,-1
+2717,orange-pineapple flavored jell-o√Ü,-1
 2718,salted cashew pieces,-1
 2719,dry brown lentils,-1
 2720,unsalted crunchy peanut butter,-1
@@ -3013,7 +3013,7 @@ ingredient_id,ingredient_name,category_id
 3011,chourico - portuguese smoked pork sausage,-1
 3012,grated fat-free parmesan cheese,-1
 3013,sugar-free cook and serve vanilla pudding mix,-1
-3014,sugar-free strawberry flavored jell-oÆ,-1
+3014,sugar-free strawberry flavored jell-o√Ü,-1
 3015,sunflower seed oil,-1
 3016,roast beef,-1
 3017,frozen burger-style crumbles,-1
@@ -3153,7 +3153,7 @@ ingredient_id,ingredient_name,category_id
 3151,braunschweiger liverwurst,-1
 3152,canned pineapple chunks,-1
 3153,almond buttercrunch confection,-1
-3154,peach flavored jell-oÆ mix,-1
+3154,peach flavored jell-o√Ü mix,-1
 3155,cantaloupe,-1
 3156,chocolate brownie mix with pecans,-1
 3157,shaved semisweet chocolate,-1
@@ -3426,7 +3426,7 @@ ingredient_id,ingredient_name,category_id
 3424,crushed shredded wheat crackers,-1
 3425,heat stable artificial sweetener,-1
 3426,light cream cheese,-1
-3427,strawberry flavored jell-oÆ mix,-1
+3427,strawberry flavored jell-o√Ü mix,-1
 3428,day old french bread,-1
 3429,non-instant lemon pudding mix,-1
 3430,ground smoked ham,-1
@@ -3715,7 +3715,7 @@ ingredient_id,ingredient_name,category_id
 3713,hot dog,-1
 3714,cleaned shrimp,-1
 3715,hot pepper sauce to taste,-1
-3716,orange flavored jell-oÆ,-1
+3716,orange flavored jell-o√Ü,-1
 3717,orange sherbet,-1
 3718,alfalfa sprouts,-1
 3719,uncooked long grain brown rice,-1
@@ -3884,7 +3884,7 @@ ingredient_id,ingredient_name,category_id
 3882,lemon sherbet,-1
 3883,absinthe,-1
 3884,sour mix,-1
-3885,tropical fruit-flavored jell-oÆ mix,-1
+3885,tropical fruit-flavored jell-o√Ü mix,-1
 3886,triple berry vodka,-1
 3887,strawberry sorbet,-1
 3888,chocolate wafers,-1
@@ -3908,7 +3908,7 @@ ingredient_id,ingredient_name,category_id
 3906,mixed spice,-1
 3907,firm bananas. sliced,-1
 3908,fat free cream cheese,-1
-3909,sugar free lemon flavored jell-oÆ,-1
+3909,sugar free lemon flavored jell-o√Ü,-1
 3910,reduced fat cream cheese,-1
 3911,instant cappuccino coffee powder,-1
 3912,zwieback toast,-1
@@ -3980,7 +3980,7 @@ ingredient_id,ingredient_name,category_id
 3978,prepared spinach dip,-1
 3979,refrigerated breadstick dough,-1
 3980,plain,-1
-3981,unflavored jell-oÆ,-1
+3981,unflavored jell-o√Ü,-1
 3982,seeded and finely chopped jalapeno peppers,-1
 3983,husked,-1
 3984,thinly sliced green onions,-1
@@ -4453,7 +4453,7 @@ ingredient_id,ingredient_name,category_id
 4451,soy based liquid seasoning,-1
 4452,chocolate fudge frosting mix,-1
 4453,ground cinnamon to taste,-1
-4454,eagle brandÆ sweetened condensed milk,-1
+4454,eagle brand√Ü sweetened condensed milk,-1
 4455,whole wheat crackers,-1
 4456,ground chipotle chiles,-1
 4457,peppermint schnapps,-1
@@ -4668,7 +4668,7 @@ ingredient_id,ingredient_name,category_id
 4666,espresso ice cream,-1
 4667,black paste food coloring,-1
 4668,maraschino cherries with stems,-1
-4669,assorted fruit flavored jell-oÆ mix,-1
+4669,assorted fruit flavored jell-o√Ü mix,-1
 4670,dry vegetable dip mix,-1
 4671,halved green beans,-1
 4672,safflower oil for frying,-1
@@ -4910,7 +4910,7 @@ ingredient_id,ingredient_name,category_id
 4908,finely chopped fresh ginger root,-1
 4909,chopped fresh cilantro to taste,-1
 4910,seedless blackberry jam,-1
-4911,blackberry flavored jell-oÆ,-1
+4911,blackberry flavored jell-o√Ü,-1
 4912,cane syrup,-1
 4913,candy coated peanut butter pieces,-1
 4914,bittersweet chocolate chips,-1
@@ -4953,7 +4953,7 @@ ingredient_id,ingredient_name,category_id
 4951,1 pound hardwood chips,-1
 4952,canadian beer,-1
 4953,dry enchilada sauce mix,-1
-4954,crushed fritosÆ corn chips,-1
+4954,crushed fritos√Ü corn chips,-1
 4955,large potato hamburger buns,-1
 4956,beef kielbasa,-1
 4957,boneless sirloin tip roast,-1
@@ -4990,7 +4990,7 @@ ingredient_id,ingredient_name,category_id
 4988,frozen gala apple,-1
 4989,amaretto,-1
 4990,creme de cacao liqueur,-1
-4991,dr. pepper ô soft drink,-1
+4991,dr. pepper √¥ soft drink,-1
 4992,peeled and sliced apples,-1
 4993,pearl sago,-1
 4994,evaporated fat-free milk,-1
@@ -5003,6 +5003,6 @@ ingredient_id,ingredient_name,category_id
 5001,24x8x1 inch untreated cedar plank,-1
 5002,smoked ham steak,-1
 5003,brown sugar replacement,-1
-5004,splendaÆ granular,-1
+5004,splenda√Ü granular,-1
 5005,mashed ripe avocado,-1
 5006,treacle or molasses,-1

@@ -1,0 +1,256 @@
+flavor_id, flavor_name
+0,faint
+1,very strong
+2,mothball
+3,animal
+4,fecal
+5,indole
+6,civet
+7,roast beef
+8,roasted nuts
+9,grass
+10,medical
+11,cocoa
+12,woody
+13,medicine
+14,roasted nut
+15,medicinal
+16,solvent
+17,spice
+18,herbal
+19,sharp
+20,fruity
+21,dairy
+22,green
+23,musty
+24,coffee
+25,nutty
+26,almond
+27,balsamic
+28,gasoline
+29,floral
+30,sweet
+31,balsam
+32,plastic
+33,ethereal
+34,sulfurous
+35,apple
+36,pineapple
+37,ether
+38,banana
+39,fruit
+40,raw
+41,fishy
+42,oily
+43,earthy
+44,fungal
+45,chicken
+46,mushroom
+47,potato
+48,vegetable
+49,tomato
+50,creamy
+51,peanut
+52,cooked potato
+53,beef
+54,odorless
+55,butter
+56,green bean
+57,beany
+58,metallic
+59,waxy
+60,grape
+61,rum
+62,mild
+63,sour
+64,bitter
+65,lemon
+66,citrus
+67,soap
+68,orange peel
+69,fat
+70,fatty
+71,aldehydic
+72,burnt
+73,orange
+74,rose
+75,chemical
+76,metal
+77,roast
+78,bacon
+79,gravy
+80,meaty
+81,malty
+82,jasmine
+83,moth ball
+84,naphthelene
+85,honey
+86,leather
+87,phenolic
+88,roasted meat
+89,clean clothes
+90,fresh
+91,mandarin
+92,soapy
+93,alcohol
+94,lime
+95,peely
+96,orris
+97,grapefruit
+98,not available
+99,cheesy
+100,sweat
+101,rancid
+102,cheese
+103,hazelnut
+104,roasted
+105,barley
+106,sweet corn
+107,pungent
+108,cabbage
+109,putrid
+110,wine_like
+111,onion
+112,herbaceous
+113,spicy
+114,hyacinth
+115,clover
+116,hawthorne
+117,warm
+118,cream
+119,caramel
+120,anisic
+121,phenol
+122,rubber
+123,sulfur
+124,garlic
+125,decomposing cabbage
+126,natural
+127,weedy
+128,sickening
+129,amine
+130,egg
+131,rotten
+132,bread
+133,corn
+134,sulfury
+135,radish
+136,wild
+137,burnt sugar
+138,maple
+139,chocolate
+140,popcorn
+141,bland
+142,cooling
+143,tobacco
+144,mentholic
+145,peppermint
+146,camphoraceous
+147,minty
+148,grassy
+149,very mild
+150,tropical
+151,horseradish
+152,whiskey
+153,wine
+154,smoke
+155,narcissus
+156,mimosa
+157,malt
+158,peach
+159,new mown hay
+160,tonka
+161,prune
+162,cananga
+163,wintergreen
+164,lettuce
+165,herb
+166,geranium
+167,butterscotch
+168,candy
+169,cherry
+170,strong
+171,berry
+172,walnut
+173,flower
+174,leafy
+175,sweaty
+176,tallow
+177,coconut
+178,coumarin
+179,vanilla
+180,oil
+181,powdery
+182,cinnamic
+183,peppery
+184,mustard
+185,fish
+186,heavy
+187,chip
+188,carnation
+189,clove
+190,alcoholic
+191,honeysuckle
+192,leaf
+193,red hots
+194,paint
+195,cinnamon
+196,bready
+197,fermented
+198,mint
+199,cool
+200,lilac
+201,rose water
+202,rose flower
+203,rose dried
+204,pepper
+205,unripe banana
+206,bay oil
+207,fusel
+208,musk
+209,thyme
+210,wood
+211,dry
+212,acetone
+213,storax
+214,soy
+215,acidic
+216,vinegar
+217,linden
+218,muguet
+219,anise
+220,lily
+221,angelica
+222,pear
+223,soup
+224,formyl
+225,slightly waxy
+226,strawberry
+227,magnolia
+228,melon
+229,petal
+230,resin
+231,acid
+232,stinky
+233,feet
+234,shrimp
+235,ammoniacal
+236,menthol
+237,camphor
+238,deep
+239,raspberry
+240,lavender
+241,bread crust
+242,alkaline
+243,lemongrass
+244,moss
+245,intensely
+246,lemon peel
+247,citral
+248,unpleasant
+249,fragrant
+250,baked
+251,brown
+252,ester
+253,ozone
+254,wine-lee
