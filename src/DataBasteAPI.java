@@ -1,4 +1,5 @@
-import java.sql.Array;
+package DataBasteAPI.src;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,6 +13,7 @@ public class DataBasteAPI {
 
   /**
    * Set connection settings
+   *
    * @param url
    * @param user
    * @param password
@@ -29,6 +31,7 @@ public class DataBasteAPI {
 
   /**
    * Abstracted helper method for getting recipe list
+   *
    * @param sql given SQL statement
    * @return list of recipes
    */
@@ -43,9 +46,9 @@ public class DataBasteAPI {
       ResultSet rs = stmt.executeQuery(sql);
       while (rs.next()) {
 
-        recipes.add(new Recipe(rs.getInt("recipe_id"),rs.getString("recipe_name"),
-            rs.getInt("prep_time"),rs.getInt("cook_time"),rs.getInt("total_time"),
-            rs.getInt("servings"),rs.getString("image")));
+        recipes.add(new Recipe(rs.getInt("recipe_id"), rs.getString("recipe_name"),
+            rs.getInt("prep_time"), rs.getInt("cook_time"), rs.getInt("total_time"),
+            rs.getInt("servings"), rs.getString("image")));
 
       }
       rs.close();
@@ -60,6 +63,7 @@ public class DataBasteAPI {
 
   /**
    * Get recipes with rating equal or above given value
+   *
    * @param rating given rating value
    * @return list of recipes
    */
@@ -68,13 +72,14 @@ public class DataBasteAPI {
         + "From recipe\n"
         + "Left join review using (recipe_id)\n"
         + "Group by recipe_id\n"
-        + "Having avg(rating) >= "+rating;
+        + "Having avg(rating) >= " + rating;
 
     return getRecipeListHelper(sql);
   }
 
   /**
    * Get recipes that have the given ingredient
+   *
    * @param ingredient given ingredient name
    * @return list of recipes
    */
@@ -83,13 +88,14 @@ public class DataBasteAPI {
         + "From recipe\n"
         + "Left join amount using (recipe_id)\n"
         + "Left join ingredient using (ingredient_id)\n"
-        + "Where ingredient_name = "+ingredient;
+        + "Where ingredient_name = " + ingredient;
 
     return getRecipeListHelper(sql);
   }
 
   /**
    * Get recipes that contain some given flavor
+   *
    * @param flavor given flavor name
    * @return list of recipes
    */
@@ -102,7 +108,7 @@ public class DataBasteAPI {
         + "Left join molecule using (pubchem_id)\n"
         + "Left join property using (pubchem_id)\n"
         + "Left join flavor using (flavor_id)\n"
-        + "Where flavor_name = "+flavor;
+        + "Where flavor_name = " + flavor;
 
     return getRecipeListHelper(sql);
   }

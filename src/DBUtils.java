@@ -1,4 +1,10 @@
-import java.sql.*;
+package DataBasteAPI.src;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DBUtils {
 
@@ -14,8 +20,7 @@ public class DBUtils {
     this.con = getConnection();
   }
 
-  public Connection getConnection()
-  {
+  public Connection getConnection() {
     if (con == null) {
       try {
         con = DriverManager.getConnection(url, user, password);
@@ -38,8 +43,7 @@ public class DBUtils {
     }
   }
 
-  public int insertOneRecord(String insertSQL)
-  {
+  public int insertOneRecord(String insertSQL) {
     // System.out.println("INSERT STATEMENT: "+insertSQL);
     int key = -1;
     try {
@@ -52,14 +56,16 @@ public class DBUtils {
 
       // extract auto-incremented ID
       ResultSet rs = stmt.getGeneratedKeys();
-      if (rs.next()) key = rs.getInt(1);
+      if (rs.next()) {
+        key = rs.getInt(1);
+      }
 
       // Cleanup
       rs.close();
       stmt.close();
 
     } catch (SQLException e) {
-      System.err.println("ERROR: Could not insert record: "+insertSQL);
+      System.err.println("ERROR: Could not insert record: " + insertSQL);
       System.err.println(e.getMessage());
       e.printStackTrace();
     }
