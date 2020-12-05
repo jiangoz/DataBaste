@@ -169,7 +169,11 @@ public class DataBasteAPI {
     return output;
   }
 
-  // Get all the possible flavor names in database
+  /**
+   * Get all the possible flavor names in database
+   *
+   * @return list of flavor names
+   */
   public List<String> getFlavorNames() {
 
     String sql = "Select * \n"
