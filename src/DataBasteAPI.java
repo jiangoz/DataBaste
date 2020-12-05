@@ -113,5 +113,90 @@ public class DataBasteAPI {
     return getRecipeListHelper(sql);
   }
 
+  /**
+   * Get recipes that are above or equal to given rating AND contains given flavor
+   *
+   * @param rating
+   * @param flavor
+   * @return list of recipes
+   */
+  public List<Recipe> getRecipesWithRatingFlavor(int rating, String flavor) {
+    List<Recipe> output = getRecipesWithRating(rating);
+    output.retainAll(getRecipesWithFlavor(flavor));
+    return output;
+  }
+
+  /**
+   * Get recipes that are above or equal to given rating AND contains given ingredient
+   *
+   * @param rating
+   * @param ingredient
+   * @return list of recipes
+   */
+  public List<Recipe> getRecipesWithRatingIngredient(int rating, String ingredient) {
+    List<Recipe> output = getRecipesWithRating(rating);
+    output.retainAll(getRecipesWithIngredient(ingredient));
+    return output;
+
+  }
+
+  /**
+   * Get recipes that contains given ingredient AND contains given flavor
+   *
+   * @param ingredient
+   * @param flavor
+   * @return list of recipes
+   */
+  public List<Recipe> getRecipesWithIngredientFlavor(String ingredient, String flavor) {
+    List<Recipe> output = getRecipesWithIngredient(ingredient);
+    output.retainAll(getRecipesWithFlavor(flavor));
+    return output;
+  }
+
+  /**
+   * Get recipes that are above/equal to rating AND contains given ingredient AND flavor
+   *
+   * @param rating
+   * @param ingredient
+   * @param flavor
+   * @return list of recipes
+   */
+  public List<Recipe> getRecipesWithRatingIngredientFlavor(int rating, String ingredient,
+      String flavor) {
+    List<Recipe> output = getRecipesWithRating(rating);
+    output.retainAll(getRecipesWithIngredient(ingredient));
+    output.retainAll(getRecipesWithFlavor(flavor));
+    return output;
+  }
+
+  // Get all the possible flavor names in database
+  public List<String> getFlavorNames() {
+
+    String sql = "Select * \n"
+        + "From flavor;";
+
+    List<String> flavors = new ArrayList<String>();
+
+    try {
+      // get connection and initialize statement
+      Connection con = dbu.getConnection();
+      Statement stmt = con.createStatement();
+      ResultSet rs = stmt.executeQuery(sql);
+      while (rs.next()) {
+
+        flavors.add(rs.getString("flavor_name"));
+
+      }
+      rs.close();
+      stmt.close();
+    } catch (SQLException e) {
+      System.err.println(e.getMessage());
+      e.printStackTrace();
+    }
+
+    return flavors;
+
+  }
+
 
 }

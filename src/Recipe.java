@@ -48,4 +48,23 @@ public class Recipe {
   public String getImageURL() {
     return imageURL;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+
+    Recipe recipe = (Recipe) o;
+
+    return recipeID == recipe.recipeID;
+  }
+
+  @Override
+  public int hashCode() {
+    return recipeID;
+  }
 }
