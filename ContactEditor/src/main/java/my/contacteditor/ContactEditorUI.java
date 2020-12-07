@@ -1,14 +1,19 @@
 package my.contacteditor;
 import javax.swing.*;
 import java.awt.*;
+import java.util.*;
+import java.net.URL;
 
 public class ContactEditorUI extends javax.swing.JFrame {
 
     /**
      * Creates new form ContactEditorUI
      */
+    DataBasteAPI d;
     public ContactEditorUI() {
         initComponents();
+        d = new DataBasteAPI();
+        d.authenticate("jdbc:mysql://localhost:3306/databaste?serverTimezone=UTC", "root", "ilikepie03");
     }
 
     /**
@@ -59,7 +64,7 @@ public class ContactEditorUI extends javax.swing.JFrame {
         jSlider1.setPaintLabels(true);
         jSlider1.setSnapToTicks(true);
 
-        jTextPane1.setText("Lemon\nGarlic\nChicken Breast");
+        jTextPane1.setText("Lemon\n");
         jTextPane1.setToolTipText("");
         jScrollPane2.setViewportView(jTextPane1);
 
@@ -71,6 +76,11 @@ public class ContactEditorUI extends javax.swing.JFrame {
         jLabel4.setText("Flavor:");
 
         jButton2.setText("Find Recipes");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -172,13 +182,13 @@ public class ContactEditorUI extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel2))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(154, 154, 154)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
                 .addComponent(jScrollBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -191,10 +201,11 @@ public class ContactEditorUI extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -235,6 +246,26 @@ public class ContactEditorUI extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.out.println(jTextPane1.getText());
+        String[] items = jTextPane1.getText().split("\\s+");
+        java.util.List<String> c = Arrays.asList(items);
+        java.util.List<Recipe> a = d.getRecipesWithIngredients(c);
+        for (int i = 0; i < a.size(); i++) {
+            System.out.println(a.get(i).getRecipeName());
+        }
+//        try {
+//            URL url = new URL(a.get(0).getImageURL());
+//            ImageIcon newicon = new javax.swing.ImageIcon(ImageIO.read(url););
+//            Image img = a.getImage();
+//            Image newimg = img.getScaledInstance( 100, 100,  java.awt.Image.SCALE_SMOOTH ) ;  
+//            ImageIcon icon = new ImageIcon(newimg);
+//        jButton1.setIcon();
+//        } catch (Exception e) {
+//            
+//        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 public void openWebPage(String url){
    try {         
