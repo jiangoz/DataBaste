@@ -66,11 +66,13 @@ public class DataBasteAPI {
    * @return list of recipes
    */
   public List<Recipe> getRecipesWithRating(int rating) {
-    String sql = "Select *, avg(rating)\n"
-        + "From recipe\n"
-        + "Left join review using (recipe_id)\n"
-        + "Group by recipe_id\n"
-        + "Having avg(rating) >= " + rating;
+    String sql =
+        "Select recipe_id, recipe_name, prep_time, cook_time, "
+            + "total_time, servings, image, avg(rating)\n"
+            + "From recipe\n"
+            + "Left join review using (recipe_id)\n"
+            + "Group by recipe_id\n"
+            + "Having avg(rating) >= " + rating;
 
     return getRecipeListHelper(sql);
   }
