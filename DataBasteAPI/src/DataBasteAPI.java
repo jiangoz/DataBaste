@@ -100,20 +100,13 @@ public class DataBasteAPI {
    */
   public List<Recipe> getRecipesWithIngredients(List<String> ingredients) {
 
-    if (ingredients.size() == 1) {
-      return getRecipesWithOneIngredient(ingredients.get(0));
-    } else {
-      String sql = "Select *\n"
-          + "From recipe\n"
-          + "Left join amount using (recipe_id)\n"
-          + "Left join ingredient using (ingredient_id)\n"
-          + "Where ingredient_name = " + "\"" + ingredients.get(0) + "\"";
-      for (int i = 1; i < ingredients.size(); i++) {
-        sql += " and ingredient_name = " + "\"" + ingredients.get(i) + "\"";
-      }
+    List<Recipe> output = getRecipesWithOneIngredient(ingredients.get(0));
 
-      return getRecipeListHelper(sql);
+    for (int i = 1; i < ingredients.size(); i++) {
+      output.retainAll(getRecipesWithOneIngredient(ingredients.get(i)));
     }
+
+    return output;
   }
 
   /**
