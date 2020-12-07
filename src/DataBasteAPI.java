@@ -78,12 +78,12 @@ public class DataBasteAPI {
   }
 
   /**
-   * Get recipes that have the given ingredient
+   * Get recipes that have the given 1 ingredient
    *
    * @param ingredient given ingredient name
    * @return list of recipes
    */
-  public List<Recipe> getRecipesWithIngredient(String ingredient) {
+  private List<Recipe> getRecipesWithOneIngredient(String ingredient) {
     String sql = "Select *\n"
         + "From recipe\n"
         + "Left join amount using (recipe_id)\n"
@@ -91,6 +91,31 @@ public class DataBasteAPI {
         + "Where ingredient_name = " + ingredient;
 
     return getRecipeListHelper(sql);
+  }
+
+  /**
+   * Get recipes that have the given ingredient(s). Works for multiple ingredients or just one
+   * ingredient.
+   *
+   * @param ingredients list of ingredient names
+   * @return list of recipes
+   */
+  public List<Recipe> getRecipesWithIngredients(List<String> ingredients) {
+
+    if (ingredients.size() == 1) {
+      return getRecipesWithOneIngredient(ingredients.get(0));
+    } else {
+      String sql = "Select *\n"
+          + "From recipe\n"
+          + "Left join amount using (recipe_id)\n"
+          + "Left join ingredient using (ingredient_id)\n"
+          + "Where ingredient_name = " + ingredients.get(0);
+      for (int i = 1; i < ingredients.size(); i++) {
+        sql += " and ingredient_name = " + ingredients.get(i);
+      }
+
+      return getRecipeListHelper(sql);
+    }
   }
 
   /**
@@ -117,7 +142,7 @@ public class DataBasteAPI {
    * Get recipes that are above or equal to given rating AND contains given flavor
    *
    * @param rating
-   * @param flavor
+   * @param flavor flavor name
    * @return list of recipes
    */
   public List<Recipe> getRecipesWithRatingFlavor(int rating, String flavor) {
@@ -127,46 +152,79 @@ public class DataBasteAPI {
   }
 
   /**
-   * Get recipes that are above or equal to given rating AND contains given ingredient
+   * Get recipes that are above or equal to given rating AND contain given ingredient(s)
    *
    * @param rating
-   * @param ingredient
+   * @param ingredients list of ingredient names
    * @return list of recipes
    */
-  public List<Recipe> getRecipesWithRatingIngredient(int rating, String ingredient) {
+  public List<Recipe> getRecipesWithRatingIngredient(int rating, List<String> ingredients) {
     List<Recipe> output = getRecipesWithRating(rating);
-    output.retainAll(getRecipesWithIngredient(ingredient));
+    output.retainAll(getRecipesWithIngredients(ingredients));
     return output;
 
   }
 
   /**
-   * Get recipes that contains given ingredient AND contains given flavor
+   * Get recipes that contain given ingredient(s) AND contains given flavor
    *
-   * @param ingredient
-   * @param flavor
+   * @param ingredients list of ingredient names
+   * @param flavor      flavor name
    * @return list of recipes
    */
-  public List<Recipe> getRecipesWithIngredientFlavor(String ingredient, String flavor) {
-    List<Recipe> output = getRecipesWithIngredient(ingredient);
+  public List<Recipe> getRecipesWithIngredientFlavor(List<String> ingredients, String flavor) {
+    List<Recipe> output = getRecipesWithIngredients(ingredients);
     output.retainAll(getRecipesWithFlavor(flavor));
     return output;
   }
 
   /**
-   * Get recipes that are above/equal to rating AND contains given ingredient AND flavor
+   * Get recipes that are above/equal to rating AND contain given ingredient(s) AND flavor
    *
    * @param rating
-   * @param ingredient
-   * @param flavor
+   * @param ingredients list of ingredient names
+   * @param flavor      flavor name
    * @return list of recipes
    */
-  public List<Recipe> getRecipesWithRatingIngredientFlavor(int rating, String ingredient,
+  public List<Recipe> getRecipesWithRatingIngredientFlavor(int rating, List<String> ingredients,
       String flavor) {
     List<Recipe> output = getRecipesWithRating(rating);
-    output.retainAll(getRecipesWithIngredient(ingredient));
+    output.retainAll(getRecipesWithIngredients(ingredients));
     output.retainAll(getRecipesWithFlavor(flavor));
     return output;
+  }
+
+
+  /**
+   * Get all the possible ingredient names in database
+   *
+   * @return list of ingredient names
+   */
+  public List<String> getIngredientNames() {
+
+    String sql = "Select * \n"
+        + "From ingredient;";
+
+    List<String> ingredients = new ArrayList<String>();
+
+    try {
+      // get connection and initialize statement
+      Connection con = dbu.getConnection();
+      Statement stmt = con.createStatement();
+      ResultSet rs = stmt.executeQuery(sql);
+      while (rs.next()) {
+
+        ingredients.add(rs.getString("ingredient_name"));
+
+      }
+      rs.close();
+      stmt.close();
+    } catch (SQLException e) {
+      System.err.println(e.getMessage());
+      e.printStackTrace();
+    }
+
+    return ingredients;
   }
 
   /**
