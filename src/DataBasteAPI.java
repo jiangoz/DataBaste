@@ -88,7 +88,7 @@ public class DataBasteAPI {
         + "From recipe\n"
         + "Left join amount using (recipe_id)\n"
         + "Left join ingredient using (ingredient_id)\n"
-        + "Where ingredient_name = " + ingredient;
+        + "Where ingredient_name = " + "\"" + ingredient + "\"";
 
     return getRecipeListHelper(sql);
   }
@@ -109,9 +109,9 @@ public class DataBasteAPI {
           + "From recipe\n"
           + "Left join amount using (recipe_id)\n"
           + "Left join ingredient using (ingredient_id)\n"
-          + "Where ingredient_name = " + ingredients.get(0);
+          + "Where ingredient_name = " + "\"" + ingredients.get(0) + "\"";
       for (int i = 1; i < ingredients.size(); i++) {
-        sql += " and ingredient_name = " + ingredients.get(i);
+        sql += " and ingredient_name = " + "\"" + ingredients.get(i) + "\"";
       }
 
       return getRecipeListHelper(sql);
@@ -133,7 +133,7 @@ public class DataBasteAPI {
         + "Left join molecule using (pubchem_id)\n"
         + "Left join property using (pubchem_id)\n"
         + "Left join flavor using (flavor_id)\n"
-        + "Where flavor_name = " + flavor;
+        + "Where flavor_name = " + "\"" + flavor + "\"";
 
     return getRecipeListHelper(sql);
   }
