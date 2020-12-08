@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 import java.net.URL;
+import javax.imageio.*;
 
 public class ContactEditorUI extends javax.swing.JFrame {
 
@@ -10,6 +11,7 @@ public class ContactEditorUI extends javax.swing.JFrame {
      * Creates new form ContactEditorUI
      */
     DataBasteAPI d;
+    java.util.List<Recipe> cur = new ArrayList<>();
     public ContactEditorUI() {
         d = new DataBasteAPI();
         d.authenticate("jdbc:mysql://localhost:3306/databaste?serverTimezone=UTC", "root", "ilikepie03");
@@ -36,13 +38,18 @@ public class ContactEditorUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jScrollBar2 = new javax.swing.JScrollBar();
         jLabel2 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
@@ -55,6 +62,7 @@ public class ContactEditorUI extends javax.swing.JFrame {
         jSlider1.setMaximum(5);
         jSlider1.setPaintLabels(true);
         jSlider1.setSnapToTicks(true);
+        jSlider1.setValue(0);
 
         jTextPane1.setText("Lemon\n");
         jTextPane1.setToolTipText("");
@@ -75,16 +83,21 @@ public class ContactEditorUI extends javax.swing.JFrame {
         });
 
         java.util.List<String> strings = d.getFlavorNames();
-        String[] strings2 = new String[10];
-        for (int i = 0; i < 10; i++) {
+        Collections.sort(strings);
+        strings.add(0, "None");
+        String[] strings2 = new String[500];
+        for (int i = 0; i < 500; i++) {
             strings2[i] = strings.get(i);
         }
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(strings2));
+        jComboBox1.setToolTipText("");
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
+
+        jLabel5.setText("Minium Rating");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -103,12 +116,14 @@ public class ContactEditorUI extends javax.swing.JFrame {
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(25, 25, 25))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -123,8 +138,10 @@ public class ContactEditorUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                        .addGap(32, 32, 32)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel5)
+                        .addGap(4, 4, 4)
                         .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -148,29 +165,34 @@ public class ContactEditorUI extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel2.setText("Recipes");
 
-        javax.swing.ImageIcon c = new javax.swing.ImageIcon("/Users/spadilla/Downloads/IMG_4107edit.jpg");
-
-        Image img3 = c.getImage() ;
-        Image newimg3 = img3.getScaledInstance( 100, 100,  java.awt.Image.SCALE_SMOOTH ) ;
-        javax.swing.ImageIcon icon3 = new ImageIcon(newimg3);
-        jButton3.setIcon(icon3);
+        jButton3.setIcon(icon);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        javax.swing.ImageIcon b = new javax.swing.ImageIcon("/Users/spadilla/Downloads/fb.jpg");
-
-        Image img2 = b.getImage() ;
-        Image newimg2 = img2.getScaledInstance( 100, 100,  java.awt.Image.SCALE_SMOOTH ) ;
-        javax.swing.ImageIcon icon2 = new ImageIcon(newimg2);
-        jButton4.setIcon(icon2);
+        jButton4.setIcon(icon);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
+
+        jButton5.setIcon(icon);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setText("1");
+
+        jLabel8.setText("2");
+
+        jLabel9.setText("3");
+
+        jLabel10.setText("4");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -179,34 +201,45 @@ public class ContactEditorUI extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
                     .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 256, Short.MAX_VALUE))))
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel9))
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel10))))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         jScrollPane3.setViewportView(jPanel3);
@@ -240,44 +273,82 @@ public class ContactEditorUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        openWebPage("https://www.thekitchn.com/lemon-garlic-chicken-264412");
+        opensite(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
+    private void opensite(int button) {
+        if (cur.size() > 0 && button < cur.size()) {
+            String[] items = cur.get(button).getRecipeName().split("\\s+");
+            //String temp = "http://letmegooglethat.com/?q=";
+            //String temp = "https://www.google.com/search?hl=&site=&q=";
+            String temp = "https://allrecipes.com/recipe/" + cur.get(button).getRecipeID();
+//            for(int i = 0; i < items.length; i++) {
+//                temp += items[i] + "+";
+//            }
+            openWebPage(temp);
+        } else {
+            JOptionPane.showMessageDialog(jPanel3, "Press Find Recipes to Search!");
+        }
+    }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         System.out.println(jTextPane1.getText());
+        System.out.println(jComboBox1.getSelectedItem().toString());
+        System.out.println(jSlider1.getValue());
         String[] items = jTextPane1.getText().split("\\s+");
-        java.util.List<String> c = Arrays.asList(items);
-        System.out.println();
-        for (int i = 0; i < c.size(); i++) {
-            System.out.println(c.get(i));
+        if (items.length == 0 || jTextPane1.getText().equals("")) {
+            JOptionPane.showMessageDialog(jPanel3, "Input some ingredients into your pantry!");
+        } else {
+            java.util.List<String> c = Arrays.asList(items);
+        java.util.List<Recipe> a;
+        if (jSlider1.getValue() == 0 && jComboBox1.getSelectedItem().toString().equals("None")) {
+            a = d.getRecipesWithIngredients(c);
+        } else if (!jComboBox1.getSelectedItem().toString().equals("None")) {
+            a = d.getRecipesWithIngredientFlavor(c, jComboBox1.getSelectedItem().toString());
+        } else if (jSlider1.getValue() != 0) {
+            a = d.getRecipesWithRatingIngredient(jSlider1.getValue(), c);
+        } else {
+            a = d.getRecipesWithRatingIngredientFlavor(jSlider1.getValue(), c, jComboBox1.getSelectedItem().toString());
         }
-        java.util.List<Recipe> a = d.getRecipesWithIngredients(c);
-//        for (int i = 0; i < a.size(); i++) {
-//            System.out.println(a.get(i).getRecipeName());
-//        }
-//        try {
-//            URL url = new URL(a.get(0).getImageURL());
-//            ImageIcon newicon = new javax.swing.ImageIcon(ImageIO.read(url););
-//            Image img = a.getImage();
-//            Image newimg = img.getScaledInstance( 100, 100,  java.awt.Image.SCALE_SMOOTH ) ;  
-//            ImageIcon icon = new ImageIcon(newimg);
-//        jButton1.setIcon();
-//        } catch (Exception e) {
-//            
-//        }
+        
+        if (a.size() == 0) {
+            JOptionPane.showMessageDialog(jPanel1, "No Results in Database");
+        }
+        cur = a;
+        ArrayList<JLabel> labels = new ArrayList<JLabel>(Arrays.asList(jLabel7,jLabel8,jLabel9,jLabel10));
+        ArrayList<JButton> buttons = new ArrayList<JButton>(Arrays.asList(jButton1,jButton4,jButton3,jButton5));
+        for (int i = 0; i < a.size(); i++) {
+            System.out.println(a.get(i).getRecipeName());
+        }
+        for (int i = 0; i < 4 && i < a.size(); i++) {
+                    labels.get(i).setText(a.get(i).getRecipeName());
+        try {
+            URL url = new URL(a.get(i).getImageURL());
+            ImageIcon newicon = new javax.swing.ImageIcon(ImageIO.read(url));
+            Image img = newicon.getImage();
+            Image newimg = img.getScaledInstance( 100, 100,  java.awt.Image.SCALE_SMOOTH );
+            buttons.get(i).setIcon(new ImageIcon(newimg));
+        } catch (Exception e) {
+            //do nothing
+        }
+        }
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        opensite(2);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        opensite(1);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        opensite(4);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
 public void openWebPage(String url){
    try {         
@@ -328,11 +399,17 @@ public void openWebPage(String url){
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -340,10 +417,10 @@ public void openWebPage(String url){
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JScrollBar jScrollBar2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSlider jSlider1;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
+
 }
