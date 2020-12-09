@@ -128,19 +128,7 @@ public class DataBasteAPI {
         + "Left join flavor using (flavor_id)\n"
         + "Where flavor_name = " + "\"" + flavor + "\"";
 
-    List<Recipe> result = getRecipeListHelper(sql);
-
-    // Get flavor of each recipe and store in HashMap
-    HashMap<Recipe, Float> map = new HashMap<Recipe, Float>();
-    for (Recipe recipe : result) {
-      map.put(recipe, getRecipeFlavorScore(recipe, flavor));
-    }
-
-    // Sort HashMap by flavor score value
-    Map<Recipe, Float> sortedMap = sortByValue(map);
-
-    // Return final recipe list sorted by flavor score descending
-    return new ArrayList<Recipe>(sortedMap.keySet());
+    return getRecipeListHelper(sql);
   }
 
   /**
@@ -153,7 +141,7 @@ public class DataBasteAPI {
   public List<Recipe> getRecipesWithRatingFlavor(int rating, String flavor) {
     List<Recipe> output = getRecipesWithRating(rating);
     output.retainAll(getRecipesWithFlavor(flavor));
-    return output;
+    return sortRecipeListByFlavorScore(output, flavor);
   }
 
   /**
@@ -180,7 +168,7 @@ public class DataBasteAPI {
   public List<Recipe> getRecipesWithIngredientFlavor(List<String> ingredients, String flavor) {
     List<Recipe> output = getRecipesWithIngredients(ingredients);
     output.retainAll(getRecipesWithFlavor(flavor));
-    return output;
+    return sortRecipeListByFlavorScore(output, flavor);
   }
 
   /**
@@ -196,7 +184,7 @@ public class DataBasteAPI {
     List<Recipe> output = getRecipesWithRating(rating);
     output.retainAll(getRecipesWithIngredients(ingredients));
     output.retainAll(getRecipesWithFlavor(flavor));
-    return output;
+    return sortRecipeListByFlavorScore(output, flavor);
   }
 
 
@@ -322,6 +310,27 @@ public class DataBasteAPI {
     }
 
     return flavorScore;
+  }
+
+  /**
+   * Sorts a given recipe list by recipe score of the given flavor
+   * @param recipeList: List of recipes to sort
+   * @param flavor: Flavor to apply flavor score on
+   * @return New recipeList that is sorted by flavor score
+   */
+  private List<Recipe> sortRecipeListByFlavorScore(List<Recipe> recipeList, String flavor) {
+
+    // Get flavor of each recipe and store in HashMap
+    HashMap<Recipe, Float> map = new HashMap<Recipe, Float>();
+    for (Recipe recipe : recipeList) {
+      map.put(recipe, getRecipeFlavorScore(recipe, flavor));
+    }
+
+    // Sort HashMap by flavor score value
+    Map<Recipe, Float> sortedMap = sortByValue(map);
+
+    // Return final recipe list sorted by flavor score descending
+    return new ArrayList<Recipe>(sortedMap.keySet());
   }
 
   /**
