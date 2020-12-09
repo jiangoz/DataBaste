@@ -128,8 +128,10 @@ public class DataBasteAPI {
         + "Left join flavor using (flavor_id)\n"
         + "Where flavor_name = " + "\"" + flavor + "\"";
 
-    List<Recipe> result = getRecipeListHelper(sql);
-    return sortRecipeListByFlavorScore(result, flavor);
+    //List<Recipe> result = getRecipeListHelper(sql);
+    //return sortRecipeListByFlavorScore(result, flavor);
+
+    return getRecipeListHelper(sql);
   }
 
   /**
