@@ -302,10 +302,7 @@ public class DataBasteAPI {
       Statement stmt = con.createStatement();
       ResultSet rs = stmt.executeQuery(sql);
       // get flavor score from query
-      if (rs.next()) {
-          //System.out.println("Here");
-          flavorScore = rs.getFloat("flavor_score");
-      }
+      flavorScore = rs.getFloat("flavor_score");
       rs.close();
       stmt.close();
     } catch (SQLException e) {
@@ -325,7 +322,6 @@ public class DataBasteAPI {
   private List<Recipe> sortRecipeListByFlavorScore(List<Recipe> recipeList, String flavor) {
 
     // Get flavor of each recipe and store in HashMap
-    System.out.println(recipeList.size());
     HashMap<Recipe, Float> map = new HashMap<Recipe, Float>();
     for (Recipe recipe : recipeList) {
       map.put(recipe, getRecipeFlavorScore(recipe, flavor));
