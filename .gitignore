@@ -2,4 +2,4 @@
 .idea/
 __pycache__/
 DataBaste.iml
-/ContactEditor/target/
+/GUI/target/

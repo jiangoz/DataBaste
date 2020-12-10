@@ -1,4 +1,4 @@
-package my.contacteditor;
+package my.gui;
 
 public class Recipe {
 

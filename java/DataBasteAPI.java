@@ -1,4 +1,4 @@
-package my.contacteditor;
+package my.gui;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
